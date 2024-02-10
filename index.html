@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--   awesome link  -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- font bangla  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind connect with CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+
+    <!-- slick slider link -->
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Educational Website</title>
+  </head>
+  <body>
+    
+    <!-- top header part start -->
+    <div class="border-b border-main">
+      <div class="container">
+        <div class="flex items-center">
+          <div class="px-4 bg-main py-3">
+            <h2 class="text-white text-xl font-normal font-trio-bangla">
+              নোটিশ
+            </h2>
+          </div>
+          <marquee
+            behavior="scroll"
+            direction="left"
+            onmouseover="this.stop()"
+            onmouseout="this.start()"
+            class="text-lg text-black font-semibold"
+            >ভর্তি বিজ্ঞপ্তিঃ আমাদের সকল আঞ্চলিক শাখায় তিন ও ছয় মাস মেয়াদী অফিস
+            এ্যাপ্লিকেশন কোর্সে জুনয়ারি - জুন এবং জুনয়ারি - মার্চ ২০২৪ সেশনে
+            ভর্তি চলছে ।বিঃ দ্রঃ ভর্তি প্রক্রিয়া অনলান।
+          </marquee>
+        </div>
+      </div>
+    </div>
+    <!-- top header part end -->
+
+    <!-- navbar part start  -->
+    <header class="bg-white border-b border-border md:py-7 py-2">
+      <div class="container">
+        <nav class="flex justify-between items-center">
+          <div>
+            <h2 class="text-black text-4xl font-bold">LOGO</h2>
+          </div>
+          <div
+            class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+          >
+            <ul
+              class="font-[trio] flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-4"
+            >
+              <li>
+                <a class="hover:text-gray-500 text-lg font-trio-bangla" href="#"
+                  >হোম</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-gray-500 text-lg font-trio-bangla" href="#"
+                  >সফল ছাত্র/ছাত্রী</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-gray-500 text-lg font-trio-bangla" href="#"
+                  >গ্যালারী</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-gray-500 text-lg font-trio-bangla" href="#"
+                  >আমাদের সর্ম্পকে</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-gray-500 text-lg font-trio-bangla" href="#"
+                  >যোগাযোগ করুন</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex items-center gap-6 md:hidden block">
+            <i
+              onclick="onToggleMenu(this)"
+              class="fa-solid fa-bars text-3xl cursor-pointer md:hidden"
+            ></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- navbar part end -->
+
+    <!-- hero section start  -->
+    <section class="bg-[#f5f9f1] overflow-hidden">
+      <div class="container lg:px-14 px-6 py-16 mx-auto">
+        <div class="items-center flex flex-col flex-col-reverse lg:flex-row">
+          <div class="w-full lg:w-1/2 mt-10 lg:mt-0">
+            <div class="lg:max-w-lg">
+                <h1 class="section_heading">Why Special<span> Classic IT?</span></h1>
+              <p class="text-black text-lg font-semibold font-trio-bangla">
+                গণপ্রজাতন্ত্রী বাংলাদেশ সরকার কর্তৃক অনুমোদিত
+              </p>
+              <h1
+                class="text-3xl font-semibold text-main lg:my-6 lg:text-7xl my-3 lg:my-0 font-trio-bangla"
+              >
+                যুব উন্নয়ন
+              </h1>
+              <h5
+                class="text-green-900 text-4xl font-semibold font-trio-bangla"
+              >
+                কম্পিউটার ও শর্টহ্যান্ড প্রশিক্ষণ কেন্দ্র
+              </h5>
+              <p class="mt-3 text-gray-600 text-lg font-trio-bangla">
+                আমাদের প্রতিষ্ঠানের পক্ষ থেকে আপনাদের সকলকে জানাই আন্তরিক
+                শুভেচ্ছা। আমরা দীর্ঘ একযুগেরও বেশি সময় ধরে তথ্য ও প্রযুক্তির
+                উন্নয়নে কাজ করে আসছি। তারই ধারাবাহিকতায়, আমাদের আঞ্চলিক শাখা
+                সমূহের মাধ্যমে তৃণমূল পর্যায়ে প্রযুক্তিতে পিছিয়ে থাকা
+                জনগোষ্ঠিকে, কম্পিউটার প্রশিক্ষণের মাধ্যমে দক্ষ জনশক্তিতে
+                রুপান্তরিত করতে আমরা নিরলসভাবে কাজ করে আসছি। আমাদের মূল লক্ষ্য
+                বেকার জনগোষ্ঠিকে প্রযুক্তিভিত্তিক আত্মনির্ভরশীল করে গড়ে তোলা এবং
+                বাংলাদেশ সরকারের ডিজিটাল বাংলাদেশকে স্মার্ট বাংলাদেশে রুপান্তর
+                করা।
+              </p>
+
+              <button
+                class="font-trio-bangla w-full px-5 py-3 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-main rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+              >
+                ছাত্র/ছাত্রীর ভর্তির আবেদন
+              </button>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center w-full lg:mt-0 lg:w-1/2">
+            <div class="relative group">
+              <img
+                class="w-full h-full lg:max-w-3xl rounded-xl opacity-80 transition-opacity"
+                src="https://images.adsttc.com/media/images/5541/4f5f/e58e/ce70/6c00/02c9/large_jpg/shutterstock_161192600.jpg?1430343514"
+                alt="Catalogue-pana.svg"
+              />
+              <div
+                class="absolute inset-0 bg-black opacity-0 opacity-50 transition-opacity rounded-xl"
+              ></div>
+              <div
+                class="absolute inset-0 flex items-center justify-center text-white opacity-100 transition-opacity"
+              >
+                <div
+                  class="relative w-[80px] h-[80px] rounded-full cursor-pointer flex justify-center items-center"
+                >
+                  <span
+                    class="absolute top-0 right-0 left-0 bottom-0 w-[80px] h-[80px] mt-1 mr-2 bg-black custom-ping rounded-full"
+                  ></span>
+                  <div
+                    class="absolute w-[80px] h-[80px] rounded-full bg-black opacity-90 cursor-pointer flex justify-center items-center"
+                  ></div>
+                  <i class="fa-solid fa-play text-white text-3xl z-10"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- service section start  -->
+    <section class="md:py-20 py-10">
+      <div class="container">
+        <!-- section title -->
+        <div class="text-center lg:mb-10 mb-5">
+          <h2 class="text-main lg:text-5xl md:text-3xl text-3xl font-bold">
+            আমাদের সেবাসমুহ
+          </h2>
+          <p class="text-lg text-black font-medium md:w-3/4 mx-auto mt-4">
+            সময়োপযোগী কোর্সসমূহ দিয়ে সাজানো হয়েছে আমাদের পাঠ্যসূচি, যা আপনাকে
+            বিশ্বজুড়ে কর্মক্ষম করে গড়ে তুলবে।
+          </p>
+        </div>
+        <!-- section title end  -->
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+          <!-- 1st service card -->
+          <div
+            class="px-8 py-10 rounded-md bg-white text-black hover:bg-main hover:text-white duration-300 ease-in border border-neutral-100"
+          >
+            <h6 class="text-base font-semibold">জনপ্রিয় কোর্স</h6>
+            <h1 class="text-xl font-semibold my-3">গ্রাফিক ডিজাইন</h1>
+            <p class="text-base font-normal mb-3">
+              একজন দক্ষ ডিজিটাল মার্কেটার হতে হলে আপনাকে ডিজিটাল প্ল্যাটফর্মে
+              পারদর্শী হতে হবে। আর এজন্য যা কিছু জানা প্রয়োজন, তার সবই থাকছে
+              আমাদের কোর্সে।
+            </p>
+            <a href="#" class="flex items-center gap-3 text-lg font-medium"
+              >কারিকুলাম <i class="fa-solid fa-angle-right"></i
+            ></a>
+          </div>
+          <!-- 2nd service card -->
+          <div
+            class="px-8 py-10 rounded-md bg-white text-black hover:bg-main hover:text-white duration-300 ease-in border border-neutral-100"
+          >
+            <h6 class="text-base font-semibold">জনপ্রিয় কোর্স</h6>
+            <h1 class="text-xl font-semibold my-3">ডিজিটাল মার্কেটিং</h1>
+            <p class="text-base font-normal mb-3">
+              একজন দক্ষ ডিজিটাল মার্কেটার হতে হলে আপনাকে ডিজিটাল প্ল্যাটফর্মে
+              পারদর্শী হতে হবে। আর এজন্য যা কিছু জানা প্রয়োজন, তার সবই থাকছে
+              আমাদের কোর্সে।
+            </p>
+            <a href="#" class="flex items-center gap-3 text-lg font-medium"
+              >কারিকুলাম <i class="fa-solid fa-angle-right"></i
+            ></a>
+          </div>
+          <!-- 3rd service card -->
+          <div
+            class="px-8 py-10 rounded-md bg-white text-black hover:bg-main hover:text-white duration-300 ease-in border border-neutral-100"
+          >
+            <h6 class="text-base font-semibold">জনপ্রিয় কোর্স</h6>
+            <h1 class="text-xl font-semibold my-3">ওয়েব ডিজাইন</h1>
+            <p class="text-base font-normal mb-3">
+              একজন দক্ষ ডিজিটাল মার্কেটার হতে হলে আপনাকে ডিজিটাল প্ল্যাটফর্মে
+              পারদর্শী হতে হবে। আর এজন্য যা কিছু জানা প্রয়োজন, তার সবই থাকছে
+              আমাদের কোর্সে।
+            </p>
+            <a href="#" class="flex items-center gap-3 text-lg font-medium"
+              >কারিকুলাম <i class="fa-solid fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- service section end -->
+
+    <!-- favourite section start  -->
+    <section class="md:pb-20 py-10 relative">
+      <h2 class="hidden xl:block courses-overlay-text">TOP COURSES</h2>
+      <div class="container">
+        <!-- section title -->
+        <div class="text-center lg:mb-10 mb-5">
+          <h2
+            class="text-main lg:text-5xl md:text-3xl text-3xl font-bold font-trio-bangla"
+          >
+            আমাদের জনপ্রিয় কোর্সসমুহ
+          </h2>
+          <p
+            class="text-lg text-black font-medium px-4 md:w-3/4 mx-auto mt-4 font-trio-bangla"
+          >
+            সময়োপযোগী কোর্সসমূহ দিয়ে সাজানো হয়েছে আমাদের পাঠ্যসূচি, যা আপনাকে
+            বিশ্বজুড়ে কর্মক্ষম করে গড়ে তুলবে।
+          </p>
+        </div>
+        <!-- section title end  -->
+
+        <!-- favourite section card start  -->
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mt-10">
+          <div
+            class="w-full lg:lg:max-w-[300px] overflow-hidden bg-white rounded-lg shadow-lg relative"
+          >
+            <img
+              class="object-cover object-center w-full h-56"
+              src="./img/top_courses_thumb02.jpg"
+              alt="avatar"
+            />
+            <div class="absolute top-[20px] left-0">
+              <div
+                class="w-[100px] h-8 flex items-center px-4 bg-primary text-base font-semibold uppercase relative popular"
+              >
+                Popular
+              </div>
+            </div>
+
+            <div class="px-6 pt-8 pb-5">
+              <h1 class="text-sm font-medium text-black">
+                In
+                <span class="text-main italic font-medium"
+                  >Beginner Course</span
+                >
+              </h1>
+
+              <p class="py-2 text-black font-medium text-lg text-capitalize">
+                Complete Office Application Program
+              </p>
+
+              <div
+                class="flex items-center mt-3 gap-3 text-gray-700 border-b border-border pb-4"
+              >
+                <div class="flex items-center text-sm gap-1 text-[#e4cf11]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="font-semibold">
+                  3.4 <span class="font-normal text-gray-500">(4,151)</span>
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between pt-2">
+                <p class="text-black font-semibold text-sm">
+                  By
+                  <a href="#" class="text-gray-500 hover:text-main"
+                    >Jose Portilla</a
+                  >
+                </p>
+                <h6 class="text-base font-medium text-black">$500</h6>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full lg:max-w-[300px] overflow-hidden bg-white rounded-lg shadow-lg relative"
+          >
+            <img
+              class="object-cover object-center w-full h-56"
+              src="./img/top_courses_thumb04.jpg"
+              alt="avatar"
+            />
+            <div class="absolute top-[20px] left-0">
+              <div
+                class="w-[100px] h-8 flex items-center px-4 bg-primary text-base font-semibold uppercase relative popular"
+              >
+                Popular
+              </div>
+            </div>
+
+            <div class="px-6 pt-8 pb-5">
+              <h1 class="text-sm font-semibold text-black">
+                In
+                <span class="text-main italic font-semibold"
+                  >Beginner Course</span
+                >
+              </h1>
+
+              <p class="py-2 text-black font-medium text-lg text-capitalize">
+                Complete Office Application Program
+              </p>
+
+              <div
+                class="flex items-center mt-3 gap-3 text-gray-700 border-b border-border pb-4"
+              >
+                <div class="flex items-center text-sm gap-1 text-[#e4cf11]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="font-semibold">
+                  3.4 <span class="font-normal text-gray-500">(4,151)</span>
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between pt-2">
+                <p class="text-black font-semibold text-sm">
+                  By
+                  <a href="#" class="text-gray-500 hover:text-main"
+                    >Jose Portilla</a
+                  >
+                </p>
+                <h6 class="text-base font-semibold text-black">$500</h6>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full lg:max-w-[300px] overflow-hidden bg-white rounded-lg shadow-lg relative"
+          >
+            <img
+              class="object-cover object-center w-full h-56"
+              src="./img/top_courses_thumb06.jpg"
+              alt="avatar"
+            />
+            <div class="absolute top-[20px] left-0">
+              <div
+                class="w-[100px] h-8 flex items-center px-4 bg-primary text-base font-semibold uppercase relative popular"
+              >
+                Popular
+              </div>
+            </div>
+
+            <div class="px-6 pt-8 pb-5">
+              <h1 class="text-sm font-medium text-black">
+                In
+                <span class="text-main italic font-medium"
+                  >Beginner Course</span
+                >
+              </h1>
+
+              <p class="py-2 text-black font-medium text-lg text-capitalize">
+                Complete Office Application Program
+              </p>
+
+              <div
+                class="flex items-center mt-3 gap-3 text-gray-700 border-b border-border pb-4"
+              >
+                <div class="flex items-center text-sm gap-1 text-[#e4cf11]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="font-semibold">
+                  3.4 <span class="font-normal text-gray-500">(4,151)</span>
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between pt-2">
+                <p class="text-black font-semibold text-sm">
+                  By
+                  <a href="#" class="text-gray-500 hover:text-main"
+                    >Jose Portilla</a
+                  >
+                </p>
+                <h6 class="text-base font-semibold text-black">$500</h6>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full lg:max-w-[300px] overflow-hidden bg-white rounded-lg shadow-lg relative"
+          >
+            <img
+              class="object-cover object-center w-full h-56"
+              src="./img/top_courses_thumb07.jpg"
+              alt="avatar"
+            />
+            <div class="absolute top-[20px] left-0">
+              <div
+                class="w-[100px] h-8 flex items-center px-4 bg-primary text-base font-semibold uppercase relative popular"
+              >
+                Popular
+              </div>
+            </div>
+
+            <div class="px-6 pt-8 pb-5">
+              <h1 class="text-sm font-medium text-black">
+                In
+                <span class="text-main italic font-medium"
+                  >Beginner Course</span
+                >
+              </h1>
+
+              <p class="py-2 text-black font-medium text-lg text-capitalize">
+                Complete Office Application Program
+              </p>
+
+              <div
+                class="flex items-center mt-3 gap-3 text-gray-700 border-b border-border pb-4"
+              >
+                <div class="flex items-center text-sm gap-1 text-[#e4cf11]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="font-semibold">
+                  3.4 <span class="font-normal text-gray-500">(4,151)</span>
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between pt-2">
+                <p class="text-black font-semibold text-sm">
+                  By
+                  <a href="#" class="text-gray-500 hover:text-main"
+                    >Jose Portilla</a
+                  >
+                </p>
+                <h6 class="text-base font-semibold text-black">$500</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- favourite section card  end  -->
+      </div>
+    </section>
+    <!-- favourite section end -->
+
+    <!-- our achievement part start  -->
+    <section
+      class="achievement text-center lg:pt-[100px] lg:pb-[110px] py-[80px]"
+    >
+      <div class="container">
+        <h2 class="text-[26px] md:text-[36px] text-white uppercase font-bold">
+          Our <span class="text-primary">Achievement</span>
+        </h2>
+
+        <!-- achievement box start here  -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:mt-[70px] mt-[50px]"
+        >
+          <!-- 1st box -->
+          <div class="box text-center">
+            <i class="fa-solid fa-graduation-cap text-3xl text-primary"></i>
+            <h3 class="text-6xl text-white my-4">30.6k</h3>
+            <p class="text-lg text-white font-medium">Completed Students</p>
+          </div>
+
+          <!-- 2nd box -->
+          <div class="box text-center">
+            <i class="fa-solid fa-chalkboard-user text-3xl text-primary"></i>
+            <h3 class="text-6xl text-white my-4">20+</h3>
+            <p class="text-lg text-white font-medium">Expert Instructor</p>
+          </div>
+
+          <!-- 3rd box -->
+          <div class="box text-center">
+            <i class="fa-solid fa-photo-film text-3xl text-primary"></i>
+            <h3 class="text-6xl text-white my-4">78+</h3>
+            <p class="text-lg text-white font-medium">Tutorials in our store</p>
+          </div>
+
+          <!-- 4th box -->
+          <div class="box text-center">
+            <i class="fa-solid fa-bag-shopping text-3xl text-primary"></i>
+            <h3 class="text-6xl text-white my-4">105+</h3>
+            <p class="text-lg text-white font-medium">Students get employed</p>
+          </div>
+        </div>
+        <!-- achievement box end here  -->
+      </div>
+    </section>
+    <!-- our achievement part end  -->
+
+    <!-- testimonial part start  -->
+    <section class="testimonial-bg lg:py-[100px] md:py-[80px] py-[50px]">
+      <div class="container">
+        <!-- section title -->
+        <div class="text-center lg:mb-10 mb-5">
+          <h2
+            class="text-main lg:text-5xl md:text-3xl text-xl font-bold font-trio-bangla"
+          >
+            সফল ছাত্র/ছাত্রী
+          </h2>
+          <p
+            class="text-lg text-black font-medium w-3/4 mx-auto mt-4 font-trio-bangla"
+          >
+            সময়োপযোগী কোর্সসমূহ দিয়ে সাজানো হয়েছে আমাদের পাঠ্যসূচি, যা আপনাকে
+            বিশ্বজুড়ে কর্মক্ষম করে গড়ে তুলবে।
+          </p>
+        </div>
+        <!-- section title end  -->
+
+        <!-- testimonial slider part start here  -->
+        <div class="">
+          <!-- testimonial card start  -->
+
+          <div class="testimonial-active slick-slider overflow-x-hidden">
+            <div class="testimonial-item">
+              <div class="testimonial-quote">
+                <svg
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 32 32"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <polygon points="0,4 0,28 12,16 12,4"></polygon>
+                    <polygon points="20,4 20,28 32,16 32,4"></polygon>
+                  </g>
+                </svg>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="testi-content">
+                <p>
+                  A foodbank is a non-profit tha charitable organization that
+                  distributes food those who have difficulty purchasing enough
+                  to avoid hunger.
+                </p>
+                <div class="testi-avatar-wrap">
+                  <div class="testi-avatar-img">
+                    <img src="./img/testi_avatar01.png" alt="" />
+                  </div>
+                  <div class="testi-avatar-info">
+                    <h6>Roshan Nikkum.</h6>
+                    <span>Public Relation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <div class="testimonial-quote">
+                <svg
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 32 32"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <polygon points="0,4 0,28 12,16 12,4"></polygon>
+                    <polygon points="20,4 20,28 32,16 32,4"></polygon>
+                  </g>
+                </svg>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="testi-content">
+                <p>
+                  A foodbank is a non-profit tha charitable organization that
+                  distributes food those who have difficulty purchasing enough
+                  to avoid hunger.
+                </p>
+                <div class="testi-avatar-wrap">
+                  <div class="testi-avatar-img">
+                    <img src="./img/testi_avatar01.png" alt="" />
+                  </div>
+                  <div class="testi-avatar-info">
+                    <h6>Roshan Nikkum.</h6>
+                    <span>Public Relation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <div class="testimonial-quote">
+                <svg
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 32 32"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <polygon points="0,4 0,28 12,16 12,4"></polygon>
+                    <polygon points="20,4 20,28 32,16 32,4"></polygon>
+                  </g>
+                </svg>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="testi-content">
+                <p>
+                  A foodbank is a non-profit tha charitable organization that
+                  distributes food those who have difficulty purchasing enough
+                  to avoid hunger.
+                </p>
+                <div class="testi-avatar-wrap">
+                  <div class="testi-avatar-img">
+                    <img src="./img/testi_avatar01.png" alt="" />
+                  </div>
+                  <div class="testi-avatar-info">
+                    <h6>Roshan Nikkum.</h6>
+                    <span>Public Relation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <div class="testimonial-quote">
+                <svg
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 32 32"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <polygon points="0,4 0,28 12,16 12,4"></polygon>
+                    <polygon points="20,4 20,28 32,16 32,4"></polygon>
+                  </g>
+                </svg>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="testi-content">
+                <p>
+                  A foodbank is a non-profit tha charitable organization that
+                  distributes food those who have difficulty purchasing enough
+                  to avoid hunger.
+                </p>
+                <div class="testi-avatar-wrap">
+                  <div class="testi-avatar-img">
+                    <img src="./img/testi_avatar01.png" alt="" />
+                  </div>
+                  <div class="testi-avatar-info">
+                    <h6>Roshan Nikkum.</h6>
+                    <span>Public Relation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <div class="testimonial-quote">
+                <svg
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 32 32"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <polygon points="0,4 0,28 12,16 12,4"></polygon>
+                    <polygon points="20,4 20,28 32,16 32,4"></polygon>
+                  </g>
+                </svg>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="testi-content">
+                <p>
+                  A foodbank is a non-profit tha charitable organization that
+                  distributes food those who have difficulty purchasing enough
+                  to avoid hunger.
+                </p>
+                <div class="testi-avatar-wrap">
+                  <div class="testi-avatar-img">
+                    <img src="./img/testi_avatar01.png" alt="" />
+                  </div>
+                  <div class="testi-avatar-info">
+                    <h6>Roshan Nikkum.</h6>
+                    <span>Public Relation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- testimonial card end -->
+        </div>
+        <!-- testimonial slider part end here  -->
+      </div>
+    </section>
+
+    <!-- testimonial part end -->
+
+    
+
+    <!-- footer section start  -->
+    <footer class="bg-[#242424] lg:py-[70px] md:py-10 py-8">
+      <div class="container">
+        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-6">
+          <!-- 1st column -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-white text-xl font-medium">About Us</h2>
+            </div>
+            <div class="font-trio-bangla text-white">
+              <p class="text-sm">
+                গণপ্রজাতন্ত্রী বাংলাদেশ সরকার কর্তৃক অনুমোদিত
+              </p>
+              <h5 class="text-lg mt-3">যুব উন্নয়ন</h5>
+              <h3 class="text-lg">কম্পিউটার ও শর্টহ্যান্ড প্রশিক্ষণ কেন্দ্র</h3>
+
+              <!-- social icons -->
+              <ul
+                class="flex items-center social-icons gap-3 justify-start mt-4"
+              >
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 2nd column  -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-white text-xl font-medium">Quick Links</h2>
+            </div>
+            <div>
+              <ul class="quick-links">
+                <li>
+                  <a href="#"> home </a>
+                </li>
+                <li>
+                  <a href="#"> About Us </a>
+                </li>
+                <li>
+                  <a href="#"> Gallery </a>
+                </li>
+                <li>
+                  <a href="#"> Portfoilo </a>
+                </li>
+                <li>
+                  <a href="#"> Blog </a>
+                </li>
+                <li>
+                  <a href="#"> Contact Us </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 3rd column  -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-white text-xl font-medium">Popular Courses</h2>
+            </div>
+
+            <div class="footer-courses">
+              <ul>
+                <li>
+                  <div class="f-courses-thumb">
+                    <a href="#"
+                      ><img src="./img/f_courses_thumb01.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="f-courses-content">
+                    <h5>
+                      <a href="#"
+                        >Access 2016 Essential Training Training Examples</a
+                      >
+                    </h5>
+                    <span>Tonoy Pueyo</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="f-courses-thumb">
+                    <a href="#"
+                      ><img src="./img/f_courses_thumb02.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="f-courses-content">
+                    <h5>
+                      <a href="#"
+                        >Access 2016 Essential Training Training Examples</a
+                      >
+                    </h5>
+                    <span>Tonoy Pueyo</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 4th column  -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-white text-xl font-medium">Twitter Feed</h2>
+            </div>
+
+            <div class="fw-tweet-post">
+              <ul>
+                <li>
+                  <i class="fab fa-twitter"></i>
+                  <div class="fw-tweet-post-content">
+                    <p>
+                      Here comes <a href="#">https://t.ew/ARkjsdsd</a> This
+                      stellar #theme is made for any type of
+                    </p>
+                    <span>3 months ago</span>
+                  </div>
+                </li>
+                <li>
+                  <i class="fab fa-twitter"></i>
+                  <div class="fw-tweet-post-content">
+                    <p>
+                      Here comes <a href="#">https://t.ew/ARkjsdsd</a> This
+                      stellar #theme is made for any type of modern…
+                      <a href="#">https://t.ew/ARkjsdsd</a>
+                    </p>
+                    <span>3 months ago</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+</footer>
+
+
+    <div class="copyright-area bg-[#1b1b1b] py-7 text-white">
+      <div class="flex justify-center">
+        <div class="copyright-text">
+          <p>COPYRIGHT © 2024. ALL RIGHTS RESERVED CLASIC IT.</p>
+        </div>
+      </div>
+    </div>
+    <!-- footer section end -->
+
+
+    <!-- scroll up button start  -->
+    <button
+      id="scrollToTopBtn"
+      class="scroll-top scroll-to-target"
+      data-target="html"
+    >
+      <i class="fas fa-angle-up"></i>
+    </button>
+    <!-- scroll up button end -->
+
+    <!-- arrow button class  -->
+    <!-- <div class="container">
+      <a href="" class="arrow-btn"
+        >read more
+        <span></span>
+      </a>
+    </div> -->
+
+    <!-- slick slider js link  -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <!-- main js file -->
+    <script src="./js/app.js"></script>
+
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+      function onToggleMenu(e) {
+        navLinks.classList.toggle("top-[24%]");
+      }
+    </script>
+  </body>
+</html>

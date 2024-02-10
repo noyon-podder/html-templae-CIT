@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tab Example</title>
+</head>
+<body>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs-container {
+  display: flex;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+  margin-right: 5px;
+}
+
+.tab:hover {
+  background-color: #ddd;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 0 5px 5px 5px;
+}
+
+.tab-content p {
+  margin: 0;
+}
+
+.arrow-btn > span {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0 4px 4px;
+    border-color: transparent transparent transparent #414141;
+    margin-left: 30px;
+    position: relative;
+    transition: .4s linear;
+}
+
+.arrow-btn > span::before {
+    content: "f061";
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 2px;
+    background: #414141;
+    transition: .4s linear;
+}
+
+    </style>
+
+<div class="tabs-container">
+  <div class="tab" onclick="openTab('tab1')">Tab 1</div>
+  <div class="tab" onclick="openTab('tab2')">Tab 2</div>
+  <div class="tab" onclick="openTab('tab3')">Tab 3</div>
+</div>
+
+<div id="tab1" class="tab-content active">
+  <p>Content for Tab 1 goes here.</p>
+</div>
+
+<div id="tab2" class="tab-content">
+  <p>Content for Tab 2 goes here.</p>
+</div>
+
+<div id="tab3" class="tab-content">
+  <p>Content for Tab 3 goes here.</p>
+
+
+</div>
+<a href="#" class="arrow-btn">
+  <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+<script src="script.js"></script>
+
+<script>
+    // Add this function to set the first tab as active on page load
+document.addEventListener("DOMContentLoaded", function() {
+  // Set the first tab as active
+  var defaultTabId = 'tab1';
+  document.getElementById(defaultTabId).style.display = 'block';
+  document.querySelector('[onclick="openTab(\'' + defaultTabId + '\')"]').classList.add('active');
+});
+
+function openTab(tabId) {
+  // Hide all tab contents
+  var tabContents = document.getElementsByClassName('tab-content');
+  for (var i = 0; i < tabContents.length; i++) {
+    tabContents[i].style.display = 'none';
+  }
+
+  // Remove 'active' class from all tabs
+  var tabs = document.getElementsByClassName('tab');
+  for (var i = 0; i < tabs.length; i++) {
+    tabs[i].classList.remove('active');
+  }
+
+  // Display the selected tab content
+  document.getElementById(tabId).style.display = 'block';
+
+  // Add 'active' class to the clicked tab
+  document.querySelector('[onclick="openTab(\'' + tabId + '\')"]').classList.add('active');
+}
+
+</script>
+</body>
+</html>
