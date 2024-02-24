@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <!--   awesome link  -->
+        <link rel="stylesheet" href="./css/all.min.css" />
+    
+        <!-- font bangla  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap"
+          rel="stylesheet"
+        />
+    
+        <!-- tailwind connect with CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+    
+        <!-- slick slider link -->
+        <link rel="stylesheet" href="./css/slick.css" />
+        <link rel="stylesheet" href="./css/slick-theme.css" />
+    
+        <link rel="stylesheet" href="./css/style.css" />
+    
+        <title>Educational Website || Course</title>
+      </head>
+<body class="bg-neutral-100">
+
+  <!-- top header part start -->
+  <div>
+    <div class="border-b-2 border-main">
+      <div class="md:container">
+        <div class="flex items-center">
+          <div class="px-4 bg-main py-1">
+            <h2
+              class="text-white lg:text-xl text-lg font-normal font-trio-bangla"
+            >
+              নোটিশ
+            </h2>
+          </div>
+          <marquee
+            behavior="scroll"
+            direction="left"
+            onmouseover="this.stop()"
+            onmouseout="this.start()"
+            class="text-base text-black font-semibold"
+            >ভর্তি বিজ্ঞপ্তিঃ আমাদের সকল আঞ্চলিক শাখায় তিন ও ছয় মাস মেয়াদী
+            অফিস এ্যাপ্লিকেশন কোর্সে জুনয়ারি - জুন এবং জুনয়ারি - মার্চ ২০২৪
+            সেশনে ভর্তি চলছে ।বিঃ দ্রঃ ভর্তি প্রক্রিয়া অনলান।
+          </marquee>
+        </div>
+      </div>
+    </div>
+    <!-- follow us div -->
+    <div class="bg-main text-white mt-[2px]">
+      <div class="container">
+        <div
+          class="flex items-center lg:justify-between lg:flex-row flex-col gap-2 w-full py-1"
+        >
+          <p class="flex items-center gap-x-2 font-open-sans">
+            <i class="fa-regular fa-envelope"></i>
+            <span class="font-medium text-base">fake@gmail.com</span>
+          </p>
+          <div class="flex items-center gap-x-4 font-open-sans">
+            <span class="text-base font-semibold">Follow Us: </span>
+            <ul class="flex items-center gap-x-4">
+              <li>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- top header part end -->
+
+    <!-- navbar part start  -->
+    <header
+      id="header"
+      class="bg-white border-b border-border lg:drop-shadow-xl py-1 duration-300 ease-in"
+    >
+      <div class="container">
+        <nav class="flex justify-between items-center bg-white">
+          <div>
+            <a href="index.html">
+              <img
+                src="./img/logo.png"
+                alt=""
+                class="lg:w-[70px] md:w-[65px] w-[60px] w-[60px] logo"
+              />
+            </a>
+          </div>
+          <div class="hidden lg:block">
+            <div class="navbar-wrap">
+              <ul
+                class="flex md:flex-row flex-col md:items-center xl:gap-2 z-50 bg-white w-full z-50 bg-white py-10 lg:py-0 pl-3 lg:pl-0"
+              >
+                <li class="active">
+                  <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li>
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="course-details.html">Courses</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="event.html">Event</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="news.html">News</a>
+                </li>
+                <button
+                  class="px-5 py-2 bg-main text-white rounded-sm text-base hover:bg-primary duration-300"
+                >
+                  Login
+                </button>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-6 md:hidden block">
+            <button id="toggleMobileMenu">
+              <div class="text-3xl text-bgray-900">
+                <span id="menuIcon" class="fa-solid fa-bars text-black"></span>
+              </div>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <!-- mobile menu bar start  -->
+      <div
+        id="mobileMenu"
+        class="h-screen w-9/12 fixed inset-y-0 left-0 z-50 bg-gray-100 transition-transform -translate-x-full border-e"
+      >
+        <div class="pt-8 flex justify-center">
+          <a href="index.html">
+            <img src="./img/logo.png" alt="" class="w-[70px]" />
+          </a>
+        </div>
+
+        <div class="flex h-screen flex-col justify-between">
+          <ul class="py-10">
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla active"
+                href="index.html"
+                >হোম
+              </a>
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="gallery.html"
+                >গ্যালারী</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="course-details.html"
+                >কোর্সসমূহ</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="about.html"
+                >আমাদের সর্ম্পকে</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="contact.html"
+                >যোগাযোগ করুন</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- mobile menu bar end lg:here -->
+    </header>
+    <!-- navbar part end -->
+    
+
+      <!-- news card section start here  -->
+
+    <div class="container">
+
+      <div class="grid lg:grid-cols-9 py-5 gap-8">
+        <div class="lg:col-span-7">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <a href="course-details.html">
+              <div
+              class="w-full max-w-sm overflow-hidden bg-white rounded-lg border border-border group"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  class="object-cover object-center w-full h-56 group-hover:scale-125 transition-transform duration-1000"
+                  src="./img/gallery/7.jpg"
+                  alt="avatar"
+                />
+                
+              </div>
+    
+              <div class="xl:px-6 lg:px-2 px-3 md:px-4 py-4">
+                <h1 class="text-lg font-medium text-gray-800  group-hover:text-main ">
+                  Web Design Courses
+                </h1>
+    
+                
+    
+                <p class="py-2 text-gray-500 font-open-sans text-sm font-semibold">
+                  Web design involves creating the visual elements and layout of a website, while
+                </p>
+                <!-- category part -->
+                <p class="text-[12px] font-open-sans text-gray-500"><b class="text-black">Category: </b> UPGRADE SKILL</p>
+                <!-- last updated -->
+                <p class="text-[12px] font-open-sans text-gray-500"><b class="text-black">Last Updated: </b> 02/02/2024</p>
+
+                <!-- total lesson & course time -->
+                <div class="flex items-center xl:gap-6 lg:gap-3 gap-6 mt-2">
+                  <div class="font-open-sans flex items-center  lg:gap-1 gap-2 xl:gap-2">
+                    <i class="fas fa-circle-play"></i>
+                    <span class="text-sm text-gray-500 font-medium">2 Lesson</span>
+                  </div>
+                  <div class="font-open-sans flex items-center lg:gap-1 gap-2 xl:gap-2">
+                    <i class="fa-regular fa-clock"></i>
+                    <span class="text-sm text-gray-500 font-medium">20:12:28 Hrs</span>
+                  </div>
+                </div>
+
+                <!-- rating  -->
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-1 mt-2">
+                    <div class="flex items-center gap-[2px] text-[#ffa500]">
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star-half-alt text-sm"></i>
+                    </div>
+                    <span class="text-gray-600">(2 Rating)</span>
+                  </div>
+
+                  <p class="font-open-sans text-sm text-gray-500 font-semibold">6 sales</p>
+                </div>
+    
+              <div class="flex items-center justify-between mt-2">
+                <div>
+                  <p class="font-semibold text-black text-lg group-hover:text-main">$180</p>
+                  <p class="text-gray-500 text-sm font-medium"><del>$220</del></p>
+                </div>
+                <button class="flex items-center gap-3 px-3 py-2 hover:bg-[#79b530] hover:text-white border border-border rounded-md text-gray-700 text-sm duration-300 hover:border-[#79b530]"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+              </div>
+              </div>
+            </div>
+    
+            </a>
+            
+            <a href="course-details.html">
+              <div
+              class="w-full max-w-sm overflow-hidden bg-white rounded-lg border border-border group"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  class="object-cover object-center w-full h-56 group-hover:scale-125 transition-transform duration-1000"
+                  src="./img/gallery/7.jpg"
+                  alt="avatar"
+                />
+                
+              </div>
+    
+              <div class="xl:px-6 lg:px-2 px-3 md:px-4 py-4">
+                <h1 class="text-lg font-medium text-gray-800  group-hover:text-main ">
+                  Web Design Courses
+                </h1>
+    
+                
+    
+                <p class="py-2 text-gray-500 font-open-sans text-sm font-semibold">
+                  Web design involves creating the visual elements and layout of a website, while
+                </p>
+                <!-- category part -->
+                <p class="text-[12px] font-open-sans text-gray-500"><b class="text-black">Category: </b> UPGRADE SKILL</p>
+                <!-- last updated -->
+                <p class="text-[12px] font-open-sans text-gray-500"><b class="text-black">Last Updated: </b> 02/02/2024</p>
+
+                <!-- total lesson & course time -->
+                <div class="flex items-center xl:gap-6 lg:gap-3 gap-6 mt-2">
+                  <div class="font-open-sans flex items-center  lg:gap-1 gap-2 xl:gap-2">
+                    <i class="fas fa-circle-play"></i>
+                    <span class="text-sm text-gray-500 font-medium">2 Lesson</span>
+                  </div>
+                  <div class="font-open-sans flex items-center lg:gap-1 gap-2 xl:gap-2">
+                    <i class="fa-regular fa-clock"></i>
+                    <span class="text-sm text-gray-500 font-medium">20:12:28 Hrs</span>
+                  </div>
+                </div>
+
+                <!-- rating  -->
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-1 mt-2">
+                    <div class="flex items-center gap-[2px] text-[#ffa500]">
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star-half-alt text-sm"></i>
+                    </div>
+                    <span class="text-gray-600">(2 Rating)</span>
+                  </div>
+
+                  <p class="font-open-sans text-sm text-gray-500 font-semibold">6 sales</p>
+                </div>
+    
+              <div class="flex items-center justify-between mt-2">
+                <div>
+                  <p class="font-semibold text-black text-lg group-hover:text-main">$180</p>
+                  <p class="text-gray-500 text-sm font-medium"><del>$220</del></p>
+                </div>
+                <button class="flex items-center gap-3 px-3 py-2 hover:bg-[#79b530] hover:text-white border border-border rounded-md text-gray-700 text-sm duration-300 hover:border-[#79b530]"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+              </div>
+              </div>
+            </div>
+    
+            </a>
+            
+            <a href="#">
+              <div
+              class="w-full max-w-sm overflow-hidden bg-white rounded-lg border border-border group"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  class="object-cover object-center w-full h-56 group-hover:scale-125 transition-transform duration-1000"
+                  src="./img/gallery/7.jpg"
+                  alt="avatar"
+                />
+                
+              </div>
+    
+              <div class="xl:px-6 lg:px-2 px-3 md:px-4 py-4">
+                <h1 class="text-lg font-medium text-gray-800  group-hover:text-main ">
+                  Web Design Courses
+                </h1>
+    
+                
+    
+                <p class="py-2 text-gray-500 font-open-sans text-sm font-semibold">
+                  Web design involves creating the visual elements and layout of a website, while
+                </p>
+                <!-- category part -->
+                <p class="text-[12px] font-open-sans text-gray-500"><b class="text-black">Category: </b> UPGRADE SKILL</p>
+                <!-- last updated -->
+                <p class="text-[12px] font-open-sans text-gray-500"><b class="text-black">Last Updated: </b> 02/02/2024</p>
+
+                <!-- total lesson & course time -->
+                <div class="flex items-center xl:gap-6 lg:gap-3 gap-6 mt-2">
+                  <div class="font-open-sans flex items-center  lg:gap-1 gap-2 xl:gap-2">
+                    <i class="fas fa-circle-play"></i>
+                    <span class="text-sm text-gray-500 font-medium">2 Lesson</span>
+                  </div>
+                  <div class="font-open-sans flex items-center lg:gap-1 gap-2 xl:gap-2">
+                    <i class="fa-regular fa-clock"></i>
+                    <span class="text-sm text-gray-500 font-medium">20:12:28 Hrs</span>
+                  </div>
+                </div>
+
+                <!-- rating  -->
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-1 mt-2">
+                    <div class="flex items-center gap-[2px] text-[#ffa500]">
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star-half-alt text-sm"></i>
+                    </div>
+                    <span class="text-gray-600">(2 Rating)</span>
+                  </div>
+
+                  <p class="font-open-sans text-sm text-gray-500 font-semibold">6 sales</p>
+                </div>
+    
+              <div class="flex items-center justify-between mt-2">
+                <div>
+                  <p class="font-semibold text-black text-lg group-hover:text-main">$180</p>
+                  <p class="text-gray-500 text-sm font-medium"><del>$220</del></p>
+                </div>
+                <button class="flex items-center gap-3 px-3 py-2 hover:bg-[#79b530] hover:text-white border border-border rounded-md text-gray-700 text-sm duration-300 hover:border-[#79b530]"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+              </div>
+              </div>
+            </div>
+    
+            </a>
+            
+            <a href="#">
+              <div
+              class="w-full max-w-sm overflow-hidden bg-white rounded-lg border border-border group"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  class="object-cover object-center w-full h-56 group-hover:scale-125 transition-transform duration-1000"
+                  src="./img/gallery/7.jpg"
+                  alt="avatar"
+                />
+                
+              </div>
+    
+              <div class="xl:px-6 lg:px-2 px-3 md:px-4 py-4">
+                <h1 class="text-lg font-medium text-gray-800  group-hover:text-main ">
+                  Web Design Courses
+                </h1>
+    
+                
+    
+                <p class="py-2 text-gray-500 font-open-sans text-sm font-semibold">
+                  Web design involves creating the visual elements and layout of a website, while
+                </p>
+                <!-- category part -->
+                <p class="text-[12px] font-open-sans text-gray-500"><b class="text-black">Category: </b> UPGRADE SKILL</p>
+                <!-- last updated -->
+                <p class="text-[12px] font-open-sans text-gray-500"><b class="text-black">Last Updated: </b> 02/02/2024</p>
+
+                <!-- total lesson & course time -->
+                <div class="flex items-center xl:gap-6 lg:gap-3 gap-6 mt-2">
+                  <div class="font-open-sans flex items-center  lg:gap-1 gap-2 xl:gap-2">
+                    <i class="fas fa-circle-play"></i>
+                    <span class="text-sm text-gray-500 font-medium">2 Lesson</span>
+                  </div>
+                  <div class="font-open-sans flex items-center lg:gap-1 gap-2 xl:gap-2">
+                    <i class="fa-regular fa-clock"></i>
+                    <span class="text-sm text-gray-500 font-medium">20:12:28 Hrs</span>
+                  </div>
+                </div>
+
+                <!-- rating  -->
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-1 mt-2">
+                    <div class="flex items-center gap-[2px] text-[#ffa500]">
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star-half-alt text-sm"></i>
+                    </div>
+                    <span class="text-gray-600">(2 Rating)</span>
+                  </div>
+
+                  <p class="font-open-sans text-sm text-gray-500 font-semibold">6 sales</p>
+                </div>
+    
+              <div class="flex items-center justify-between mt-2">
+                <div>
+                  <p class="font-semibold text-black text-lg group-hover:text-main">$180</p>
+                  <p class="text-gray-500 text-sm font-medium"><del>$220</del></p>
+                </div>
+                <button class="flex items-center gap-3 px-3 py-2 hover:bg-[#79b530] hover:text-white border border-border rounded-md text-gray-700 text-sm duration-300 hover:border-[#79b530]"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+              </div>
+              </div>
+            </div>
+    
+            </a>
+            
+            <a href="#">
+              <div
+              class="w-full max-w-sm overflow-hidden bg-white rounded-lg border border-border group"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  class="object-cover object-center w-full h-56 group-hover:scale-125 transition-transform duration-1000"
+                  src="./img/gallery/7.jpg"
+                  alt="avatar"
+                />
+                
+              </div>
+    
+              <div class="xl:px-6 lg:px-2 px-3 md:px-4 py-4">
+                <h1 class="text-lg font-medium text-gray-800  group-hover:text-main ">
+                  Web Design Courses
+                </h1>
+    
+                
+    
+                <p class="py-2 text-gray-500 font-open-sans text-sm font-semibold">
+                  Web design involves creating the visual elements and layout of a website, while
+                </p>
+                <!-- category part -->
+                <p class="text-[12px] font-open-sans text-gray-500"><b class="text-black">Category: </b> UPGRADE SKILL</p>
+                <!-- last updated -->
+                <p class="text-[12px] font-open-sans text-gray-500"><b class="text-black">Last Updated: </b> 02/02/2024</p>
+
+                <!-- total lesson & course time -->
+                <div class="flex items-center xl:gap-6 lg:gap-3 gap-6 mt-2">
+                  <div class="font-open-sans flex items-center  lg:gap-1 gap-2 xl:gap-2">
+                    <i class="fas fa-circle-play"></i>
+                    <span class="text-sm text-gray-500 font-medium">2 Lesson</span>
+                  </div>
+                  <div class="font-open-sans flex items-center lg:gap-1 gap-2 xl:gap-2">
+                    <i class="fa-regular fa-clock"></i>
+                    <span class="text-sm text-gray-500 font-medium">20:12:28 Hrs</span>
+                  </div>
+                </div>
+
+                <!-- rating  -->
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-1 mt-2">
+                    <div class="flex items-center gap-[2px] text-[#ffa500]">
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star-half-alt text-sm"></i>
+                    </div>
+                    <span class="text-gray-600">(2 Rating)</span>
+                  </div>
+
+                  <p class="font-open-sans text-sm text-gray-500 font-semibold">6 sales</p>
+                </div>
+    
+              <div class="flex items-center justify-between mt-2">
+                <div>
+                  <p class="font-semibold text-black text-lg group-hover:text-main">$180</p>
+                  <p class="text-gray-500 text-sm font-medium"><del>$220</del></p>
+                </div>
+                <button class="flex items-center gap-3 px-3 py-2 hover:bg-[#79b530] hover:text-white border border-border rounded-md text-gray-700 text-sm duration-300 hover:border-[#79b530]"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+              </div>
+              </div>
+            </div>
+    
+            </a>
+            
+            <a href="#">
+              <div
+              class="w-full max-w-sm overflow-hidden bg-white rounded-lg border border-border group"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  class="object-cover object-center w-full h-56 group-hover:scale-125 transition-transform duration-1000"
+                  src="./img/gallery/7.jpg"
+                  alt="avatar"
+                />
+                
+              </div>
+    
+              <div class="xl:px-6 lg:px-2 px-3 md:px-4 py-4">
+                <h1 class="text-lg font-medium text-gray-800  group-hover:text-main ">
+                  Web Design Courses
+                </h1>
+    
+                
+    
+                <p class="py-2 text-gray-500 font-open-sans text-sm font-semibold">
+                  Web design involves creating the visual elements and layout of a website, while
+                </p>
+                <!-- category part -->
+                <p class="text-[12px] font-open-sans text-gray-500"><b class="text-black">Category: </b> UPGRADE SKILL</p>
+                <!-- last updated -->
+                <p class="text-[12px] font-open-sans text-gray-500"><b class="text-black">Last Updated: </b> 02/02/2024</p>
+
+                <!-- total lesson & course time -->
+                <div class="flex items-center xl:gap-6 lg:gap-3 gap-6 mt-2">
+                  <div class="font-open-sans flex items-center  lg:gap-1 gap-2 xl:gap-2">
+                    <i class="fas fa-circle-play"></i>
+                    <span class="text-sm text-gray-500 font-medium">2 Lesson</span>
+                  </div>
+                  <div class="font-open-sans flex items-center lg:gap-1 gap-2 xl:gap-2">
+                    <i class="fa-regular fa-clock"></i>
+                    <span class="text-sm text-gray-500 font-medium">20:12:28 Hrs</span>
+                  </div>
+                </div>
+
+                <!-- rating  -->
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-1 mt-2">
+                    <div class="flex items-center gap-[2px] text-[#ffa500]">
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star text-sm"></i>
+                      <i class="fa-solid fa-star-half-alt text-sm"></i>
+                    </div>
+                    <span class="text-gray-600">(2 Rating)</span>
+                  </div>
+
+                  <p class="font-open-sans text-sm text-gray-500 font-semibold">6 sales</p>
+                </div>
+    
+              <div class="flex items-center justify-between mt-2">
+                <div>
+                  <p class="font-semibold text-black text-lg group-hover:text-main">$180</p>
+                  <p class="text-gray-500 text-sm font-medium"><del>$220</del></p>
+                </div>
+                <button class="flex items-center gap-3 px-3 py-2 hover:bg-[#79b530] hover:text-white border border-border rounded-md text-gray-700 text-sm duration-300 hover:border-[#79b530]"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+              </div>
+              </div>
+            </div>
+    
+            </a>
+                        
+          </div>
+        </div>
+        <div class="lg:col-span-2">
+          <div class=" bg-white px-4 pt-3 pb-4">
+            <div class="py-2 border-b border-border">
+              <h2 class="text-lg font-normal text-black">Category</h2>
+            </div>
+
+            <div class="pb-4">
+              <div class="flex items-center justify-between pt-3">
+                <p class="flex items-center gap-3">
+                  <input type="radio" id="personal" name="courseType" class="accent-main outline-none hover:text-main">
+                  <label for="personal" class="capitalize text-base">Personal Development</label>
+                </p>
+                <span>16</span>
+              </div>
+            
+              <div class="flex items-center justify-between pt-3">
+                <p class="flex items-center gap-3">
+                  <input type="radio" id="lifestyle" name="courseType" class="accent-main outline-none hover:text-main">
+                  <label for="lifestyle" class="capitalize text-base">Lifestyle Course</label>
+                </p>
+                <span>9</span>
+              </div>
+            
+              <div class="flex items-center justify-between pt-3">
+                <p class="flex items-center gap-3">
+                  <input type="radio" id="upgrade" name="courseType" class="accent-main outline-none hover:text-main">
+                  <label for="upgrade" class="capitalize text-base">Upgrade Course</label>
+                </p>
+                <span>12</span>
+              </div>
+              <div class="flex items-center justify-between pt-3">
+                <p class="flex items-center gap-3">
+                  <input type="radio" id="network" name="courseType" class="accent-main outline-none hover:text-main">
+                  <label for="network" class="capitalize text-base"> Network & Security Course</label>
+                </p>
+                <span>7</span>
+              </div>
+              <div class="flex items-center justify-between pt-3">
+                <p class="flex items-center gap-3">
+                  <input type="radio" id="health" name="courseType" class="accent-main outline-none hover:text-main">
+                  <label for="health" class="capitalize text-base">healh & fitness courses</label>
+                </p>
+                <span>21</span>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="bg-white mt-5 px-4 pt-3 pb-4">
+            <div class="py-2 border-b border-border">
+              <h2 class="text-lg font-normal text-black">Search By Courses</h2>
+            </div>
+
+            <div class="">
+              <div class="pt-3 flex ">
+                <input type="text" name="" id="" class="outline-none border-border border px-3 py-1 w-full ">
+                <button class="py-1 px-3 bg-main text-white hover:bg-green-700 duration-500"><i class="fa-solid fa-angle-right"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white mt-5 px-4 pt-3 pb-4">
+            <div class="py-2 border-b border-border">
+              <h2 class="text-lg font-normal text-black">Rating</h2>
+            </div>
+
+            <div class="">
+
+
+              
+              <div class="flex items-center justify-between pt-3">
+                <div class="flex items-center gap-3">
+                  <input type="radio" id="one" name="rating" class="accent-main outline-none hover:text-main block mt-2">
+                  <label for="one" class="capitalize text-base text-[#ffa500]">
+                    <i class="fa-solid fa-star text-sm"></i>
+                    <i class="fa-solid fa-star text-sm text-[#ccc]"></i>
+                    <i class="fa-solid fa-star text-sm text-[#ccc]"></i>
+                    <i class="fa-solid fa-star text-sm text-[#ccc]"></i>
+                    <i class="fa-solid fa-star text-[#ccc]"></i>
+                  </label>
+                </div>
+                <span>2</span>
+              </div>
+
+
+              <div class="flex items-center justify-between pt-3">
+                <div class="flex items-center gap-3">
+                  <input type="radio" id="two" name="rating" class="accent-main outline-none hover:text-main block mt-2">
+                  <label for="two" class="capitalize text-base text-[#ffa500]">
+                    <i class="fa-solid fa-star text-sm"></i>
+                    <i class="fa-solid fa-star text-sm"></i>
+                    <i class="fa-solid fa-star text-sm text-[#ccc]"></i>
+                    <i class="fa-solid fa-star text-sm text-[#ccc]"></i>
+                    <i class="fa-solid fa-star text-[#ccc]"></i>
+                  </label>
+                </div>
+                <span>7</span>
+              </div>
+
+
+
+
+
+              <div class="flex items-center justify-between pt-3">
+                <div class="flex items-center gap-3">
+                  <input type="radio" id="three" name="rating" class="accent-main outline-none hover:text-main block mt-2">
+                  <label for="three" class="capitalize text-base text-[#ffa500]">
+                    <i class="fa-solid fa-star text-sm"></i>
+                    <i class="fa-solid fa-star text-sm"></i>
+                    <i class="fa-solid fa-star text-sm"></i>
+                    <i class="fa-solid fa-star text-sm text-[#ccc]"></i>
+                    <i class="fa-solid fa-star text-[#ccc]"></i>
+                  </label>
+                </div>
+                <span>15</span>
+              </div>
+
+              <div class="flex items-center justify-between pt-3">
+                <div class="flex items-center gap-3">
+                  <input type="radio" id="four" name="rating" class="accent-main outline-none hover:text-main block mt-2">
+                  <label for="four" class="capitalize text-base text-[#ffa500]">
+                    <i class="fa-solid fa-star text-sm"></i>
+                    <i class="fa-solid fa-star text-sm"></i>
+                    <i class="fa-solid fa-star text-sm"></i>
+                    <i class="fa-solid fa-star text-sm"></i>
+                    <i class="fa-solid fa-star text-[#ccc]"></i>
+                  </label>
+                </div>
+                <span>8</span>
+              </div>
+
+              <div class="flex items-center justify-between pt-3">
+                <div class="flex items-center gap-3">
+                  <input type="radio" id="five" name="rating" class="accent-main outline-none hover:text-main block mt-2">
+                  <label for="five" class="capitalize text-base text-[#ffa500]">
+                    <i class="fa-solid fa-star text-sm"></i>
+                    <i class="fa-solid fa-star text-sm"></i>
+                    <i class="fa-solid fa-star text-sm"></i>
+                    <i class="fa-solid fa-star text-sm"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </label>
+                </div>
+                <span>16</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+      
+    </div>
+    <!-- news card section end here  -->
+
+
+
+
+    <script src="./tailwind.config.js"></script>
+
+</body>
+</html>

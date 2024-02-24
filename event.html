@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <!--   awesome link  -->
+        <link rel="stylesheet" href="./css/all.min.css" />
+    
+        <!-- font bangla  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap"
+          rel="stylesheet"
+        />
+    
+        <!-- tailwind connect with CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="./tailwind.config.js"></script>
+    
+        <!-- slick slider link -->
+        <link rel="stylesheet" href="./css/slick.css" />
+        <link rel="stylesheet" href="./css/slick-theme.css" />
+    
+        <link rel="stylesheet" href="./css/style.css" />
+    
+        <title>Educational Website || Event</title>
+      </head>
+<body>
+    <!-- top header part start -->
+    <div class="border-b border-main">
+        <div class="md:container">
+          <div class="flex items-center">
+            <div class="px-4 bg-main py-3">
+              <h2 class="text-white text-xl font-normal font-trio-bangla">
+                নোটিশ
+              </h2>
+            </div>
+            <marquee
+              behavior="scroll"
+              direction="left"
+              onmouseover="this.stop()"
+              onmouseout="this.start()"
+              class="text-lg text-black font-semibold"
+              >ভর্তি বিজ্ঞপ্তিঃ আমাদের সকল আঞ্চলিক শাখায় তিন ও ছয় মাস মেয়াদী অফিস
+              এ্যাপ্লিকেশন কোর্সে জুনয়ারি - জুন এবং জুনয়ারি - মার্চ ২০২৪ সেশনে
+              ভর্তি চলছে ।বিঃ দ্রঃ ভর্তি প্রক্রিয়া অনলান।
+            </marquee>
+          </div>
+        </div>
+      </div>
+      <!-- top header part end -->
+     <!-- navbar part start  -->
+    <header class="bg-white border-b border-border md:py-4 py-2">
+        <div class="container">
+          <nav class="flex justify-between items-center bg-white">
+            <div>
+              <a href="index.html">
+                <img
+                  src="./img/logo.png"
+                  alt=""
+                  class="lg:w-[90px] md:w-[80px] w-[60px]"
+                />
+              </a>
+            </div>
+            <div
+              class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+            >
+              <ul
+                class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-4 z-50 bg-white w-full z-50 bg-white py-10 lg:py-0 pl-3 lg:pl-0"
+              >
+                <li>
+                  <a
+                    class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla active"
+                    href="index.html"
+                    >হোম
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                    href="gallery.html"
+                    >গ্যালারী</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                    href="course-details.html"
+                    >কোর্সসমূহ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                    href="about.html"
+                    >আমাদের সর্ম্পকে</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                    href="contact.html"
+                    >যোগাযোগ করুন</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                    href="event.html"
+                    >ইভেন্ট</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                    href="news.html"
+                    >নিউজ</a
+                  >
+                </li>
+              </ul>
+            </div>
+  
+            <div class="flex items-center gap-6 md:hidden block">
+              <button id="toggleMobileMenu">
+                <div class="text-3xl text-bgray-900">
+                  <span id="menuIcon" class="fa-solid fa-bars text-black"></span>
+                </div>
+              </button>
+            </div>
+          </nav>
+        </div>
+  
+  
+        <!-- mobile menu bar start  -->
+        <div id="mobileMenu" class="h-screen w-9/12 fixed inset-y-0 left-0 z-50 bg-gray-100 transition-transform -translate-x-full border-e ">
+          <div class="pt-8 flex justify-center">
+            <a href="index.html">
+              <img
+                src="./img/logo.png"
+                alt=""
+                class="w-[70px]"
+              />
+            </a>
+          </div>
+      
+          <div class="flex h-screen flex-col justify-between">
+            
+            
+            <ul class="py-10 ">
+  
+              <li class="py-3 px-6 border-b border-[#eaeaea]">
+                <a
+                  class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla active"
+                  href="index.html"
+                  >হোম
+                </a>
+              </li>
+              <li class="py-3 px-6 border-b border-[#eaeaea]">
+                <a
+                  class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                  href="gallery.html"
+                  >গ্যালারী</a
+                >
+              </li>
+              <li class="py-3 px-6 border-b border-[#eaeaea]">
+                <a
+                  class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                  href="course-details.html"
+                  >কোর্সসমূহ</a
+                >
+              </li>
+              <li class="py-3 px-6 border-b border-[#eaeaea]">
+                <a
+                  class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                  href="about.html"
+                  >আমাদের সর্ম্পকে</a
+                >
+              </li>
+              <li class="py-3 px-6 border-b border-[#eaeaea]">
+                <a
+                  class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                  href="contact.html"
+                  >যোগাযোগ করুন</a
+                >
+              </li>
+            </ul>
+        </div>
+          </div>
+          <!-- mobile menu bar end here -->
+      </header>
+      <!-- navbar part end -->
+
+
+      <!-- event banner part start  -->
+    <section
+    class="bg-[url('./img/about/breadcrumb_bg02.jpg')] bg-cover md:h-[250px] h-[200px] bg-center bg-no-repeat relative"
+  >
+    <!-- Black overlay -->
+    <div class="absolute inset-0 bg-[#000] opacity-50 z-10"></div>
+    <div
+      class="flex flex-col gap-10 items-center justify-center w-full h-full z-50 relative"
+    >
+      <h2 class="text-white uppercase text-3xl lg:text-6xl font-semibold">
+        our upcoming events
+      </h2>
+      <!-- breadcrumbs -->
+      <ul class="flex text-white">
+        <li>
+          <a href="#" class="text-white text-[20px] font-normal pl-6 pr-6"
+            >Home</a
+          >
+        </li>
+        <li
+          class="text-white text-[20px] font-normal pl-6 pr-6 relative breadcrumb-list active"
+        >
+          Event
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- event banner part end  -->
+
+
+
+  <!-- event card section start here  -->
+
+  <div class="container">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-10">
+
+
+        <a href="event-details.html" >
+            <div class="md:flex max-w-full overflow-hidden bg-white rounded ">
+                <!-- <div class="w-2/3 bg-cover" style="background-image: url('./img/about/about.jpg')"></div> -->
+                <div class="md:w-2/3 w-full h-[200px] md:h-auto" >
+                    <img src="./img/about/about.jpg" alt="" class="w-full h-full object-cover">
+                </div>
+            
+                <div class="md:w-2/3 w-full  mt-5 md:mt-0 px-4 md:p-4">
+                    <h1 class="text-xl font-medium text-gray-800 hover:text-main">WordPress MeetUp Conference 2017</h1>
+                    <p class="mt-2 text-sm text-gray-600 font-open-sans text-ellipsis overflow-hidden">Bimply dummy text of the printing and typesetting istryrem Ipsum has been the industry's standard dummy text ever when an unknown printer.</p>
+            
+                    <div class="mt-5">
+                        <p class="flex items-center gap-x-3 mb-3 text-gray-800"><span><i class="fa-solid fa-calendar-days text-main text-xl"></i></span> 22 December, 2016</p>
+                        <p class="flex items-center gap-x-3 text-gray-800"><span><i class="fa-solid fa-location-dot text-main text-xl"></i></span> NewYork Tower, Melbourne</p>
+                    </div>
+            
+                    
+                </div>
+            </div>
+        </a>
+
+        <a href="#" >
+            <div class="md:flex max-w-full overflow-hidden bg-white rounded ">
+                <!-- <div class="w-2/3 bg-cover" style="background-image: url('./img/about/about.jpg')"></div> -->
+                <div class="md:w-2/3 w-full h-[200px] md:h-auto" >
+                    <img src="./img/course/course-bg.png" alt="" class="w-full h-full object-cover">
+                </div>
+            
+                <div class="md:w-2/3 w-full  mt-5 md:mt-0 px-4 md:p-4">
+                    <h1 class="text-xl font-medium text-gray-800 hover:text-main">WordPress MeetUp Conference 2017</h1>
+                    <p class="mt-2 text-sm text-gray-600 font-open-sans text-ellipsis overflow-hidden">Bimply dummy text of the printing and typesetting istryrem Ipsum has been the industry's standard dummy text ever when an unknown printer.</p>
+            
+                    <div class="mt-5">
+                        <p class="flex items-center gap-x-3 mb-3 text-gray-800"><span><i class="fa-solid fa-calendar-days text-main text-xl"></i></span> 22 December, 2016</p>
+                        <p class="flex items-center gap-x-3 text-gray-800"><span><i class="fa-solid fa-location-dot text-main text-xl"></i></span> NewYork Tower, Melbourne</p>
+                    </div>
+            
+                    
+                </div>
+            </div>
+        </a>
+        <a href="#" >
+            <div class="md:flex max-w-full overflow-hidden bg-white rounded ">
+                <!-- <div class="w-2/3 bg-cover" style="background-image: url('./img/about/about.jpg')"></div> -->
+                <div class="md:w-2/3 w-full h-[200px] md:h-auto" >
+                    <img src="./img/about/about.jpg" alt="" class="w-full h-full object-cover">
+                </div>
+            
+                <div class="md:w-2/3 w-full  mt-5 md:mt-0 px-4 md:p-4">
+                    <h1 class="text-xl font-medium text-gray-800 hover:text-main">WordPress MeetUp Conference 2017</h1>
+                    <p class="mt-2 text-sm text-gray-600 font-open-sans text-ellipsis overflow-hidden">Bimply dummy text of the printing and typesetting istryrem Ipsum has been the industry's standard dummy text ever when an unknown printer.</p>
+            
+                    <div class="mt-5">
+                        <p class="flex items-center gap-x-3 mb-3 text-gray-800"><span><i class="fa-solid fa-calendar-days text-main text-xl"></i></span> 22 December, 2016</p>
+                        <p class="flex items-center gap-x-3 text-gray-800"><span><i class="fa-solid fa-location-dot text-main text-xl"></i></span> NewYork Tower, Melbourne</p>
+                    </div>
+            
+                    
+                </div>
+            </div>
+        </a>
+        <a href="#" >
+            <div class="md:flex max-w-full overflow-hidden bg-white rounded ">
+                <!-- <div class="w-2/3 bg-cover" style="background-image: url('./img/about/about.jpg')"></div> -->
+                <div class="md:w-2/3 w-full h-[200px] md:h-auto" >
+                    <img src="./img/course/course-bg.png" alt="" class="w-full h-full object-cover">
+                </div>
+            
+                <div class="md:w-2/3 w-full  mt-5 md:mt-0 px-4 md:p-4">
+                    <h1 class="text-xl font-medium text-gray-800 hover:text-main">WordPress MeetUp Conference 2017</h1>
+                    <p class="mt-2 text-sm text-gray-600 font-open-sans text-ellipsis overflow-hidden">Bimply dummy text of the printing and typesetting istryrem Ipsum has been the industry's standard dummy text ever when an unknown printer.</p>
+            
+                    <div class="mt-5">
+                        <p class="flex items-center gap-x-3 mb-3 text-gray-800"><span><i class="fa-solid fa-calendar-days text-main text-xl"></i></span> 22 December, 2016</p>
+                        <p class="flex items-center gap-x-3 text-gray-800"><span><i class="fa-solid fa-location-dot text-main text-xl"></i></span> NewYork Tower, Melbourne</p>
+                    </div>
+            
+                    
+                </div>
+            </div>
+        </a>
+        <a href="#" >
+            <div class="md:flex max-w-full overflow-hidden bg-white rounded ">
+                <!-- <div class="w-2/3 bg-cover" style="background-image: url('./img/about/about.jpg')"></div> -->
+                <div class="md:w-2/3 w-full h-[200px] md:h-auto" >
+                    <img src="./img/about/about.jpg" alt="" class="w-full h-full object-cover">
+                </div>
+            
+                <div class="md:w-2/3 w-full  mt-5 md:mt-0 px-4 md:p-4">
+                    <h1 class="text-xl font-medium text-gray-800 hover:text-main">WordPress MeetUp Conference 2017</h1>
+                    <p class="mt-2 text-sm text-gray-600 font-open-sans text-ellipsis overflow-hidden">Bimply dummy text of the printing and typesetting istryrem Ipsum has been the industry's standard dummy text ever when an unknown printer.</p>
+            
+                    <div class="mt-5">
+                        <p class="flex items-center gap-x-3 mb-3 text-gray-800"><span><i class="fa-solid fa-calendar-days text-main text-xl"></i></span> 22 December, 2016</p>
+                        <p class="flex items-center gap-x-3 text-gray-800"><span><i class="fa-solid fa-location-dot text-main text-xl"></i></span> NewYork Tower, Melbourne</p>
+                    </div>
+            
+                    
+                </div>
+            </div>
+        </a>
+        <a href="#" >
+            <div class="md:flex max-w-full overflow-hidden bg-white rounded ">
+                <!-- <div class="w-2/3 bg-cover" style="background-image: url('./img/about/about.jpg')"></div> -->
+                <div class="md:w-2/3 w-full h-[200px] md:h-auto" >
+                    <img src="./img/course/course-bg.png" alt="" class="w-full h-full object-cover">
+                </div>
+            
+                <div class="md:w-2/3 w-full  mt-5 md:mt-0 px-4 md:p-4">
+                    <h1 class="text-xl font-medium text-gray-800 hover:text-main">WordPress MeetUp Conference 2017</h1>
+                    <p class="mt-2 text-sm text-gray-600 font-open-sans text-ellipsis overflow-hidden">Bimply dummy text of the printing and typesetting istryrem Ipsum has been the industry's standard dummy text ever when an unknown printer.</p>
+            
+                    <div class="mt-5">
+                        <p class="flex items-center gap-x-3 mb-3 text-gray-800"><span><i class="fa-solid fa-calendar-days text-main text-xl"></i></span> 22 December, 2016</p>
+                        <p class="flex items-center gap-x-3 text-gray-800"><span><i class="fa-solid fa-location-dot text-main text-xl"></i></span> NewYork Tower, Melbourne</p>
+                    </div>
+            
+                    
+                </div>
+            </div>
+        </a>
+        <a href="#" >
+            <div class="md:flex max-w-full overflow-hidden bg-white rounded ">
+                <!-- <div class="w-2/3 bg-cover" style="background-image: url('./img/about/about.jpg')"></div> -->
+                <div class="md:w-2/3 w-full h-[200px] md:h-auto" >
+                    <img src="./img/about/about.jpg" alt="" class="w-full h-full object-cover">
+                </div>
+            
+                <div class="md:w-2/3 w-full  mt-5 md:mt-0 px-4 md:p-4">
+                    <h1 class="text-xl font-medium text-gray-800 hover:text-main">WordPress MeetUp Conference 2017</h1>
+                    <p class="mt-2 text-sm text-gray-600 font-open-sans text-ellipsis overflow-hidden">Bimply dummy text of the printing and typesetting istryrem Ipsum has been the industry's standard dummy text ever when an unknown printer.</p>
+            
+                    <div class="mt-5">
+                        <p class="flex items-center gap-x-3 mb-3 text-gray-800"><span><i class="fa-solid fa-calendar-days text-main text-xl"></i></span> 22 December, 2016</p>
+                        <p class="flex items-center gap-x-3 text-gray-800"><span><i class="fa-solid fa-location-dot text-main text-xl"></i></span> NewYork Tower, Melbourne</p>
+                    </div>
+            
+                    
+                </div>
+            </div>
+        </a>
+        <a href="#" >
+            <div class="md:flex max-w-full overflow-hidden bg-white rounded ">
+                <!-- <div class="w-2/3 bg-cover" style="background-image: url('./img/about/about.jpg')"></div> -->
+                <div class="md:w-2/3 w-full h-[200px] md:h-auto" >
+                    <img src="./img/course/course-bg.png" alt="" class="w-full h-full object-cover">
+                </div>
+            
+                <div class="md:w-2/3 w-full  mt-5 md:mt-0 px-4 md:p-4">
+                    <h1 class="text-xl font-medium text-gray-800 hover:text-main">WordPress MeetUp Conference 2017</h1>
+                    <p class="mt-2 text-sm text-gray-600 font-open-sans text-ellipsis overflow-hidden">Bimply dummy text of the printing and typesetting istryrem Ipsum has been the industry's standard dummy text ever when an unknown printer.</p>
+            
+                    <div class="mt-5">
+                        <p class="flex items-center gap-x-3 mb-3 text-gray-800"><span><i class="fa-solid fa-calendar-days text-main text-xl"></i></span> 22 December, 2016</p>
+                        <p class="flex items-center gap-x-3 text-gray-800"><span><i class="fa-solid fa-location-dot text-main text-xl"></i></span> NewYork Tower, Melbourne</p>
+                    </div>
+            
+                    
+                </div>
+            </div>
+        </a>
+
+        
+        
+
+      
+
+
+    </div>
+  </div>
+  <!-- event card section end here  -->
+
+
+</body>
+</html>
