@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--   awesome link  -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- font bangla  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind connect with CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+
+    <!-- slick slider link -->
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Educational Website | Contact</title>
+  </head>
+  <body>
+    
+     <!-- top header part start -->
+     <div>
+      <div class="border-b-2 border-main">
+        <div class="md:container">
+          <div class="flex items-center">
+            <div class="px-4 bg-main py-1">
+              <h2
+                class="text-white lg:text-xl text-lg font-normal font-trio-bangla"
+              >
+                নোটিশ
+              </h2>
+            </div>
+            <marquee
+              behavior="scroll"
+              direction="left"
+              onmouseover="this.stop()"
+              onmouseout="this.start()"
+              class="text-base text-black font-semibold"
+              >ভর্তি বিজ্ঞপ্তিঃ আমাদের সকল আঞ্চলিক শাখায় তিন ও ছয় মাস মেয়াদী
+              অফিস এ্যাপ্লিকেশন কোর্সে জুনয়ারি - জুন এবং জুনয়ারি - মার্চ ২০২৪
+              সেশনে ভর্তি চলছে ।বিঃ দ্রঃ ভর্তি প্রক্রিয়া অনলান।
+            </marquee>
+          </div>
+        </div>
+      </div>
+      <!-- follow us div -->
+      <div class="bg-main text-white mt-[2px]">
+        <div class="container">
+          <div
+            class="flex items-center lg:justify-between lg:flex-row flex-col gap-2 w-full py-1"
+          >
+            <p class="flex items-center gap-x-2 font-open-sans">
+              <i class="fa-regular fa-envelope"></i>
+              <span class="font-medium text-base">fake@gmail.com</span>
+            </p>
+            <div class="flex items-center gap-x-4 font-open-sans">
+              <span class="text-base font-semibold">Follow Us: </span>
+              <ul class="flex items-center gap-x-4">
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- top header part end -->
+
+    <!-- navbar part start  -->
+    <header
+      id="header"
+      class="bg-white border-b border-border lg:drop-shadow-xl py-1 duration-300 ease-in"
+    >
+      <div class="container">
+        <nav class="flex justify-between items-center bg-white">
+          <div>
+            <a href="index.html">
+              <img
+                src="./img/logo.png"
+                alt=""
+                class="lg:w-[70px] md:w-[65px] w-[60px] w-[60px] logo"
+              />
+            </a>
+          </div>
+          <div class="hidden lg:block">
+            <div class="navbar-wrap">
+              <ul
+                class="flex md:flex-row flex-col md:items-center xl:gap-2 z-50 bg-white w-full z-50 bg-white py-10 lg:py-0 pl-3 lg:pl-0"
+              >
+                <li class="active">
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg lg:text-sm" href="index.html">Home </a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="course.html">Courses</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="contact.html">Contact Us</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="event.html">Event</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="news.html">News</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <div class="lg:flex hidden items-center gap-5 ">
+            <button
+                  id="openOverlayBtn"
+                  class="px-5 py-2 bg-main text-white rounded-sm text-[18px] hover:bg-primary duration-300"
+                >
+                  Login
+                </button>
+
+                <a href="cart.html" class="w-[45px] h-[45px] leading-[45px]  duration-300 hover:bg-main hover:text-white border border-main rounded-full text-main flex items-center justify-center text-base relative">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                
+                  <span class="w-[22px] h-[22px] bg-black text-white rounded-full leading-[22px] text-center font-open-sans text-[12px] absolute -top-[6px] left-[27px]">0</span>
+                </a>
+          </div>
+
+
+          <!-- mobile menu show -->
+          <div class="flex items-center gap-6 lg:hidden">
+            <button
+              id="openOverlayBtn2"
+              class="px-5 py-2 bg-main text-white rounded-sm text-base hover:bg-primary duration-300"
+            >
+              Login
+            </button>
+
+            <a href="cart.html" class="w-[45px] h-[45px] leading-[45px]  duration-300 hover:bg-main hover:text-white border border-main rounded-full text-main flex items-center justify-center text-base relative">
+              <i class="fa-solid fa-bag-shopping"></i>
+            
+              <span class="w-[22px] h-[22px] bg-black text-white rounded-full leading-[22px] text-center font-open-sans text-[12px] absolute -top-[6px] left-[27px]">0</span>
+            </a>
+            <button id="toggleMobileMenu">
+              <div class="text-3xl text-bgray-900">
+                <span id="menuIcon" class="fa-solid fa-bars text-black"></span>
+              </div>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <!-- mobile menu bar start  -->
+      <div
+        id="mobileMenu"
+        class="h-screen w-9/12 fixed inset-y-0 left-0 z-40 bg-gray-100 transition-transform -translate-x-full border-e"
+      >
+        <div class="pt-8 flex justify-center">
+          <a href="index.html">
+            <img src="./img/logo.png" alt="" class="w-[70px]" />
+          </a>
+        </div>
+
+        <div class="flex h-screen flex-col justify-between">
+          <ul class="py-10">
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla active"
+                href="index.html"
+                >হোম
+              </a>
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="gallery.html"
+                >গ্যালারী</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="course-details.html"
+                >কোর্সসমূহ</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="about.html"
+                >আমাদের সর্ম্পকে</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="contact.html"
+                >যোগাযোগ করুন</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- mobile menu bar end lg:here -->
+    </header>
+    <!-- navbar part end -->
+
+
+    <!-- contact banner part start -->
+    <section
+      class="bg-[url('./img/contact.jpg')] bg-cover md:h-[250px] h-[200px] bg-center bg-no-repeat relative"
+    >
+      <!-- Black overlay -->
+      <div class="absolute inset-0 bg-[#000] opacity-50 z-10"></div>
+      <div
+        class="flex flex-col gap-10 items-center justify-center w-full h-full z-50 relative"
+      >
+        <h2 class="uppercase text-white text-3xl lg:text-6xl font-semibold">
+          Contact with us
+        </h2>
+        <!-- breadcrumbs -->
+        <ul class="flex text-white">
+          <li>
+            <a href="#" class="text-white text-[20px] font-normal pl-6 pr-6"
+              >Home</a
+            >
+          </li>
+          <li
+            class="text-white text-[20px] font-normal pl-6 pr-6 relative breadcrumb-list active"
+          >
+            Contact
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- contact banner part end -->
+
+    <!-- contact form box start -->
+    <section class="md:py-20 py-10">
+      <div class="container">
+        <!-- section title -->
+        <div class="text-center lg:mb-10 mb-5">
+          <h2 class="text-black lg:text-5xl md:text-3xl text-3xl font-semibold">
+            Our Contact Details Are As <span class="text-main">Follows</span>
+          </h2>
+          <p class="text-lg text-[#7b7b7b] font-medium md:w-3/4 mx-auto mt-4">
+            Ritamin Ipsum is simply dummy text of the printing and tysettin
+          </p>
+        </div>
+        <!-- section title end  -->
+
+        <div class="flex lg:mt-20 mt-10">
+            <div class="w-full lg:w-10/12 xl:w-10/12 mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 contact-info-wrap">
+                    <div class="contact-box">
+                        <div class="contact-box-icon">
+                            <img src="img/icon/contact_icon01.png" alt="">
+                        </div>
+                        <div class="contact-box-content">
+                            <h5>Phone Number</h5>
+                            <span>+02 5458 6598 523</span>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <div class="contact-box-icon">
+                            <img src="img/icon/contact_icon02.png" alt="">
+                        </div>
+                        <div class="contact-box-content">
+                            <h5>Find Location</h5>
+                            <span>Uttra, Dhaka</span>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <div class="contact-box-icon">
+                            <img src="img/icon/contact_icon03.png" alt="">
+                        </div>
+                        <div class="contact-box-content">
+                            <h5>Our Mail</h5>
+                            <span>classicit@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="flex ">
+             <!-- map wrapper start -->
+          <div class="w-full lg:h-[435px] md:h-[380px] h-[250px] lg:w-10/12 xl:w-10/12 mx-auto bg-yellow-800">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29187.951805280485!2d90.3819074!3d23.872096199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1707815747425!5m2!1sen!2sbd" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <!-- map wrapper end -->
+          </div>
+
+          <!-- input group form -->
+          <div class="flex mt-10">
+            <div class="w-full lg:w-10/12 mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="c-form-grp">
+                        <input type="text" placeholder="First Name *">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="c-form-grp">
+                        <input type="text" placeholder="First Name *">
+                        <i class="far fa-user"></i>
+                    </div>
+                </div>
+                <div class="c-form-grp">
+                    <textarea name="message" id="message" placeholder="Your Massage" class="h-[97px]"></textarea>
+                    <i class="far fa-envelope"></i>
+                </div>
+                <div class="flex justify-center">
+                    <button class="px-[60px] py-3 bg-primary border-primary border text-black text-lg text-white font-medium hover:bg-main hover:text-white hover:border-main duration-300 ">Submit</button>
+                </div>
+            </div>
+          </div>
+
+          
+      </div>
+    </section>
+    <!-- contact form box end -->
+
+
+
+
+     <!-- slick slider js link  -->
+     <script
+     type="text/javascript"
+     src="//code.jquery.com/jquery-1.11.0.min.js"
+   ></script>
+   <script src="./js/waypoint.js"></script>
+   <script
+     type="text/javascript"
+     src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+   ></script>
+   <script type="text/javascript" src="./js/slick.min.js"></script>
+
+   <script src="./js/jquery.rcounter.js"></script>
+   <script src="./tailwind.config.js"></script>
+   <!-- main js file -->
+   <script src="./js/app.js"></script>
+
+  </body>
+</html>

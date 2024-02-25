@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+<!--   awesome link  -->
+<link rel="stylesheet" href="./css/all.min.css" />  
+</head>
+<body>
+
+
+  <div class="flex items-center justify-between w-100">
+    <h2>Logo</h2>  
+    
+    <button id="toggleMobileMenu">
+      <div class="border text-3xl bg-bgray-100 text-bgray-900 shadow rounded-full rotate-180">
+          <span id="menuIcon" class="fas fa-arrow-left text-black bg-red-600"></span>
+          
+        </div>
+  </button>
+  </div>
+
+  <div id="mobileMenu" class="h-screen w-11/12 fixed inset-y-0 left-0 z-50 bg-gray-100 transition-transform -translate-x-full">
+    
+  <div class="flex h-screen flex-col justify-between border-e">
+    <!-- Include your MobileMenu content here -->
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Gallery</li>
+      <li>Blog</li>
+      <li>  Contact </li>
+    </ul>
+</div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var mobileMenu = document.getElementById("mobileMenu");
+      var toggleMobileMenu = document.getElementById("toggleMobileMenu");
+      var menuIcon = document.getElementById("menuIcon");
+  
+      toggleMobileMenu.addEventListener("click", function () {
+          mobileMenu.classList.toggle("-translate-x-full");
+
+          if (mobileMenu.classList.contains("-translate-x-full")) {
+            menuIcon.className = "fas fa-arrow-left";
+        } else {
+            menuIcon.className = "fas fa-arrow-right";
+        }
+      });
+  });
+  </script>
+</body>
+</html>

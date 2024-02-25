@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--   awesome link  -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- font bangla  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind connect with CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+
+    <!-- slick slider link -->
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Educational Website</title>
+  </head>
+  <body>
+  
+     <!-- top header part start -->
+     <div>
+      <div class="border-b-2 border-main">
+        <div class="md:container">
+          <div class="flex items-center">
+            <div class="px-4 bg-main py-1">
+              <h2
+                class="text-white lg:text-xl text-lg font-normal font-trio-bangla"
+              >
+                নোটিশ
+              </h2>
+            </div>
+            <marquee
+              behavior="scroll"
+              direction="left"
+              onmouseover="this.stop()"
+              onmouseout="this.start()"
+              class="text-base text-black font-semibold"
+              >ভর্তি বিজ্ঞপ্তিঃ আমাদের সকল আঞ্চলিক শাখায় তিন ও ছয় মাস মেয়াদী
+              অফিস এ্যাপ্লিকেশন কোর্সে জুনয়ারি - জুন এবং জুনয়ারি - মার্চ ২০২৪
+              সেশনে ভর্তি চলছে ।বিঃ দ্রঃ ভর্তি প্রক্রিয়া অনলান।
+            </marquee>
+          </div>
+        </div>
+      </div>
+      <!-- follow us div -->
+      <div class="bg-main text-white mt-[2px]">
+        <div class="container">
+          <div
+            class="flex items-center lg:justify-between lg:flex-row flex-col gap-2 w-full py-1"
+          >
+            <p class="flex items-center gap-x-2 font-open-sans">
+              <i class="fa-regular fa-envelope"></i>
+              <span class="font-medium text-base">fake@gmail.com</span>
+            </p>
+            <div class="flex items-center gap-x-4 font-open-sans">
+              <span class="text-base font-semibold">Follow Us: </span>
+              <ul class="flex items-center gap-x-4">
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- top header part end -->
+
+    <!-- navbar part start  -->
+    <header
+      id="header"
+      class="bg-white border-b border-border lg:drop-shadow-xl py-1 duration-300 ease-in"
+    >
+      <div class="container">
+        <nav class="flex justify-between items-center bg-white">
+          <div>
+            <a href="index.html">
+              <img
+                src="./img/logo.png"
+                alt=""
+                class="lg:w-[70px] md:w-[65px] w-[60px] w-[60px] logo"
+              />
+            </a>
+          </div>
+          <div class="hidden lg:block">
+            <div class="navbar-wrap">
+              <ul
+                class="flex md:flex-row flex-col md:items-center xl:gap-2 z-50 bg-white w-full z-50 bg-white py-10 lg:py-0 pl-3 lg:pl-0"
+              >
+                <li class="active">
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg lg:text-sm" href="index.html">Home </a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="course.html">Courses</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="contact.html">Contact Us</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="event.html">Event</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="news.html">News</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <div class="lg:flex hidden items-center gap-5 ">
+            <button
+                  id="openOverlayBtn"
+                  class="px-5 py-2 bg-main text-white rounded-sm text-[18px] hover:bg-primary duration-300"
+                >
+                  Login
+                </button>
+
+                <a href="cart.html" class="w-[45px] h-[45px] leading-[45px]  duration-300 hover:bg-main hover:text-white border border-main rounded-full text-main flex items-center justify-center text-base relative">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                
+                  <span class="w-[22px] h-[22px] bg-black text-white rounded-full leading-[22px] text-center font-open-sans text-[12px] absolute -top-[6px] left-[27px]">0</span>
+                </a>
+          </div>
+
+
+          <!-- mobile menu show -->
+          <div class="flex items-center gap-6 lg:hidden">
+            <button
+              id="openOverlayBtn2"
+              class="px-5 py-2 bg-main text-white rounded-sm text-base hover:bg-primary duration-300"
+            >
+              Login
+            </button>
+
+            <a href="cart.html" class="w-[45px] h-[45px] leading-[45px]  duration-300 hover:bg-main hover:text-white border border-main rounded-full text-main flex items-center justify-center text-base relative">
+              <i class="fa-solid fa-bag-shopping"></i>
+            
+              <span class="w-[22px] h-[22px] bg-black text-white rounded-full leading-[22px] text-center font-open-sans text-[12px] absolute -top-[6px] left-[27px]">0</span>
+            </a>
+            <button id="toggleMobileMenu">
+              <div class="text-3xl text-bgray-900">
+                <span id="menuIcon" class="fa-solid fa-bars text-black"></span>
+              </div>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <!-- mobile menu bar start  -->
+      <div
+        id="mobileMenu"
+        class="h-screen w-9/12 fixed inset-y-0 left-0 z-40 bg-gray-100 transition-transform -translate-x-full border-e"
+      >
+        <div class="pt-8 flex justify-center">
+          <a href="index.html">
+            <img src="./img/logo.png" alt="" class="w-[70px]" />
+          </a>
+        </div>
+
+        <div class="flex h-screen flex-col justify-between">
+          <ul class="py-10">
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla active"
+                href="index.html"
+                >হোম
+              </a>
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="gallery.html"
+                >গ্যালারী</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="course-details.html"
+                >কোর্সসমূহ</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="about.html"
+                >আমাদের সর্ম্পকে</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="contact.html"
+                >যোগাযোগ করুন</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- mobile menu bar end lg:here -->
+    </header>
+    <!-- navbar part end -->
+
+
+    <!-- about banner part start  -->
+    <section
+      class="bg-[url('./img/about/breadcrumb_bg02.jpg')] bg-cover  md:h-[250px] h-[200px] bg-top-center bg-no-repeat relative"
+    >
+      <!-- Black overlay -->
+      <div class="absolute inset-0 bg-[#000] opacity-50 z-10"></div>
+      <div
+        class="flex flex-col gap-10 items-center justify-center w-full h-full z-50 relative"
+      >
+        <h2 class="text-white text-3xl lg:text-6xl font-semibold uppercase">
+          LEARN MORE ABOUT US
+        </h2>
+        <!-- breadcrumbs -->
+        <ul class="flex text-white">
+          <li>
+            <a href="#" class="text-white text-[20px] font-normal pl-6 pr-6"
+              >Home</a
+            >
+          </li>
+          <li
+            class="text-white text-[20px] font-normal pl-6 pr-6 relative breadcrumb-list active"
+          >
+            About
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- about banner part end  -->
+
+    <!-- about us section start  -->
+    <section class="about-container relative lg:py-[80px] md:py-[60px] py-10">
+      <img
+        src="./img/about/courses_shape01.png"
+        alt=""
+        class="absolute top-0 left-0 -z-10"
+      />
+      <!-- about heading -->
+      <div class="text-center container">
+        <h2 class="lg:text-4xl md:text-3xl text-2xl font-semibold text-black">
+          Browse Our Top Courses
+          <span class="text-main">For Remote</span> Learning.
+        </h2>
+      </div>
+
+      <!-- about content -->
+      <div class="container">
+        <!-- <div class="bg-[url('./img/about/featured_courses_shape.png')] bg-left-bottom bg-cover py-20 bg-no-repeat mt-10"> -->
+        <div class="lg:mt-[100px] md:mt-[80px] mt-10">
+          <div class="featured-courses-shape"></div>
+          <div
+            class="flex items-center justify-center gap-[50px] lg:flex-row flex-col"
+          >
+            <div class="lg:w-1/2 lg:text-right">
+              <span class="text-base text-gray-400 mb-4">INGREDIENTS</span>
+              <h2 class="text-[26px] mb-[25px] font-medium">
+                Learning Paths <span class="text-main">For Remote</span>
+              </h2>
+              <p
+                class="text-sm font-medium text-[#7d7d7d] w-[96%] lg:w-2/3 lg:ml-auto font-open-sans mb-[35px]"
+              >
+                A good education makes an individual develop personally,
+                socially as well as economically. Education helps us to do our
+                daily life activities in the best possible ways. Education makes
+                us dutiful. Education helps us to acquire new skills and
+                knowledge that will impact.
+              </p>
+              <button
+                class="px-10 py-4 bg-primary text-white border border-primary font-semibold hover:bg-main hover:text-white duration-300 hover:border-main"
+              >
+                Start Today
+              </button>
+            </div>
+            <div class="lg:w-1/2">
+              <img src="./img/about/about.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about us section end -->
+
+    <!-- category bg start  -->
+    <section
+      class="bg-[url('./img/about/cta_bg.jpg')] bg-fixed bg-cover lg:py-[150px] py-[100px] relative"
+    >
+      <div
+        class="bg-[#000] inset-0 opacity-50 absolute top-0 left-0 bg-fixed"
+      ></div>
+
+      <div class="flex items-center justify-center w-full h-full">
+        <div class="relative">
+          <h2
+            class="relative lg:text-5xl md:text-4xl text-3xl font-medium text-white capitalize text-center"
+          >
+            Get <span class="text-primary">Personalized</span> All Categories
+            Recommendations
+            <span
+              class="absolute w-[5px] h-[5px] bg-primary -right-[12px] bottom-0 hidden lg:block"
+            ></span>
+          </h2>
+          <p
+            class="text-lg font-normal text-white text-center mt-7 font-open-sans"
+          >
+            Answer a few questions for your top picks of the printing
+          </p>
+
+          <div class="flex items-center justify-center md:gap-8 gap-5 mt-10">
+            <button
+              class="md:px-8 px-5 md:py-4 py-3 bg-primary text-white font-medium text-lg duration-300 ease hover:bg-main hover:text-white"
+            >
+              + Start Teaching Today
+            </button>
+            <button
+              class="md:px-8 px-5 md:py-4 py-3 border border-white border-[2px] font-medium text-white duration-300 ease bg-transparent hover:bg-primary hover:text-white hover:border-primary"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- category bg end -->
+
+    <!-- team member start -->
+    <section class="md:py-20 py-10">
+      <!-- section title -->
+      <div class="text-center lg:mb-10 mb-5">
+        <h2 class="text-main lg:text-5xl md:text-3xl text-3xl font-bold">
+          অনলাইন কোর্সসমূহের শিক্ষকবৃন্দ
+        </h2>
+        <p class="text-lg text-black font-medium md:w-3/4 mx-auto mt-4">
+          দক্ষ শিক্ষকরাই আমাদের প্রতিষ্ঠানের মেরুদন্ড
+        </p>
+      </div>
+      <!-- section title end  -->
+
+      <!-- team member start  -->
+      <div class="container">
+        <div
+          class="grid grid-cols-1 md:gridc-cols-2 lg:grid-cols-4 gap-10 lg:mt-[60px] md:mt-[50px] mt-10"
+        >
+          <!-- 1st card -->
+          <div class="team-box overflow-hidden text-center">
+            <div class="team-thumb relative">
+              <img src="./img/about/team_img01.jpg" alt="" />
+              <ul class="team-social">
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="team-content pt-4">
+              <h4 class="text-[20px] mb-[7px]">
+                <a href="#" class="text-black hover:text-main"
+                  >Tomad Alexander<span class="text-3xl text-main">.</span></a
+                >
+              </h4>
+              <span class="text-[#7d7d7d] font-medium">Instructor</span>
+            </div>
+          </div>
+
+          <div class="team-box overflow-hidden text-center">
+            <div class="team-thumb relative">
+              <img src="./img/about/team_img02.jpg" alt="" />
+              <ul class="team-social">
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="team-content pt-4">
+              <h4 class="text-[20px] mb-[7px]">
+                <a href="#" class="text-black hover:text-main"
+                  >David Paine<span class="text-3xl text-main">.</span></a
+                >
+              </h4>
+              <span class="text-[#7d7d7d] font-medium">Instructor</span>
+            </div>
+          </div>
+
+          <div class="team-box overflow-hidden text-center">
+            <div class="team-thumb relative">
+              <img src="./img/about/team_img03.jpg" alt="" />
+              <ul class="team-social">
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="team-content pt-4">
+              <h4 class="text-[20px] mb-[7px]">
+                <a href="#" class="text-black hover:text-main"
+                  >Alex Hales<span class="text-3xl text-main">.</span></a
+                >
+              </h4>
+              <span class="text-[#7d7d7d] font-medium">Designer</span>
+            </div>
+          </div>
+
+          <div class="team-box overflow-hidden text-center">
+            <div class="team-thumb relative">
+              <img src="./img/about/team_img04.jpg" alt="" />
+              <ul class="team-social">
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="team-content pt-4">
+              <h4 class="text-[20px] mb-[7px]">
+                <a href="#" class="text-black hover:text-main"
+                  >Stive Smith<span class="text-3xl text-main">.</span></a
+                >
+              </h4>
+              <span class="text-[#7d7d7d] font-medium">PHP Developer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- team member end -->
+
+    <!-- footer section start  -->
+    <footer class="bg-[#242424] lg:py-[70px] md:py-10 py-8">
+      <div class="container">
+        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-6">
+          <!-- 1st column -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-white text-xl font-medium">About Us</h2>
+            </div>
+            <div class="font-trio-bangla text-white">
+              <p class="text-sm">
+                গণপ্রজাতন্ত্রী বাংলাদেশ সরকার কর্তৃক অনুমোদিত
+              </p>
+              <h5 class="text-lg mt-3">যুব উন্নয়ন</h5>
+              <h3 class="text-lg">কম্পিউটার ও শর্টহ্যান্ড প্রশিক্ষণ কেন্দ্র</h3>
+
+              <!-- social icons -->
+              <ul
+                class="flex items-center social-icons gap-3 justify-start mt-4"
+              >
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 2nd column  -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-white text-xl font-medium">Quick Links</h2>
+            </div>
+            <div>
+              <ul class="quick-links">
+                <li>
+                  <a href="#"> home </a>
+                </li>
+                <li>
+                  <a href="#"> About Us </a>
+                </li>
+                <li>
+                  <a href="#"> Gallery </a>
+                </li>
+                <li>
+                  <a href="#"> Portfoilo </a>
+                </li>
+                <li>
+                  <a href="#"> Blog </a>
+                </li>
+                <li>
+                  <a href="#"> Contact Us </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 3rd column  -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-white text-xl font-medium">Popular Courses</h2>
+            </div>
+
+            <div class="footer-courses">
+              <ul>
+                <li>
+                  <div class="f-courses-thumb">
+                    <a href="#"
+                      ><img src="./img/f_courses_thumb01.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="f-courses-content">
+                    <h5>
+                      <a href="#"
+                        >Access 2016 Essential Training Training Examples</a
+                      >
+                    </h5>
+                    <span>Tonoy Pueyo</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="f-courses-thumb">
+                    <a href="#"
+                      ><img src="./img/f_courses_thumb02.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="f-courses-content">
+                    <h5>
+                      <a href="#"
+                        >Access 2016 Essential Training Training Examples</a
+                      >
+                    </h5>
+                    <span>Tonoy Pueyo</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 4th column  -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-white text-xl font-medium">Twitter Feed</h2>
+            </div>
+
+            <div class="fw-tweet-post">
+              <ul>
+                <li>
+                  <i class="fab fa-twitter"></i>
+                  <div class="fw-tweet-post-content">
+                    <p>
+                      Here comes <a href="#">https://t.ew/ARkjsdsd</a> This
+                      stellar #theme is made for any type of
+                    </p>
+                    <span>3 months ago</span>
+                  </div>
+                </li>
+                <li>
+                  <i class="fab fa-twitter"></i>
+                  <div class="fw-tweet-post-content">
+                    <p>
+                      Here comes <a href="#">https://t.ew/ARkjsdsd</a> This
+                      stellar #theme is made for any type of modern…
+                      <a href="#">https://t.ew/ARkjsdsd</a>
+                    </p>
+                    <span>3 months ago</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright-area bg-[#1b1b1b] py-7 text-white">
+      <div class="flex justify-center">
+        <div class="copyright-text">
+          <p>COPYRIGHT © 2024. ALL RIGHTS RESERVED CLASIC IT.</p>
+        </div>
+      </div>
+    </div>
+    <!-- footer section end -->
+  </body>
+</html>

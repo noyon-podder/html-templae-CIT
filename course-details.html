@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Website | কোর্সসমুহ</title>
+
+     <!--   awesome link  -->
+     <link rel="stylesheet" href="./css/all.min.css" />
+
+     <!-- font bangla  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap"
+       rel="stylesheet"
+     />
+ 
+     <!-- tailwind connect with CDN -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script src="./tailwind.config.js"></script>
+ 
+     <!-- slick slider link -->
+     <link rel="stylesheet" href="./css/slick.css" />
+     <link rel="stylesheet" href="./css/slick-theme.css" />
+ 
+     <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <!-- top header part start -->
+    <div>
+      <div class="border-b-2 border-main">
+        <div class="md:container">
+          <div class="flex items-center">
+            <div class="px-4 bg-main py-1">
+              <h2
+                class="text-white lg:text-xl text-lg font-normal font-trio-bangla"
+              >
+                নোটিশ
+              </h2>
+            </div>
+            <marquee
+              behavior="scroll"
+              direction="left"
+              onmouseover="this.stop()"
+              onmouseout="this.start()"
+              class="text-base text-black font-semibold"
+              >ভর্তি বিজ্ঞপ্তিঃ আমাদের সকল আঞ্চলিক শাখায় তিন ও ছয় মাস মেয়াদী
+              অফিস এ্যাপ্লিকেশন কোর্সে জুনয়ারি - জুন এবং জুনয়ারি - মার্চ ২০২৪
+              সেশনে ভর্তি চলছে ।বিঃ দ্রঃ ভর্তি প্রক্রিয়া অনলান।
+            </marquee>
+          </div>
+        </div>
+      </div>
+      <!-- follow us div -->
+      <div class="bg-main text-white mt-[2px]">
+        <div class="container">
+          <div
+            class="flex items-center lg:justify-between lg:flex-row flex-col gap-2 w-full py-1"
+          >
+            <p class="flex items-center gap-x-2 font-open-sans">
+              <i class="fa-regular fa-envelope"></i>
+              <span class="font-medium text-base">fake@gmail.com</span>
+            </p>
+            <div class="flex items-center gap-x-4 font-open-sans">
+              <span class="text-base font-semibold">Follow Us: </span>
+              <ul class="flex items-center gap-x-4">
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- top header part end -->
+
+    <!-- navbar part start  -->
+    <header
+      id="header"
+      class="bg-white border-b border-border lg:drop-shadow-xl py-1 duration-300 ease-in"
+    >
+      <div class="container">
+        <nav class="flex justify-between items-center bg-white">
+          <div>
+            <a href="index.html">
+              <img
+                src="./img/logo.png"
+                alt=""
+                class="lg:w-[70px] md:w-[65px] w-[60px] w-[60px] logo"
+              />
+            </a>
+          </div>
+          <div class="hidden lg:block">
+            <div class="navbar-wrap">
+              <ul
+                class="flex md:flex-row flex-col md:items-center xl:gap-2 z-50 bg-white w-full z-50 bg-white py-10 lg:py-0 pl-3 lg:pl-0"
+              >
+                <li class="active">
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg lg:text-sm" href="index.html">Home </a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="course.html">Courses</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="contact.html">Contact Us</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="event.html">Event</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="news.html">News</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <div class="lg:flex hidden items-center gap-5 ">
+            <button
+                  id="openOverlayBtn"
+                  class="px-5 py-2 bg-main text-white rounded-sm text-[18px] hover:bg-primary duration-300"
+                >
+                  Login
+                </button>
+
+                <a href="cart.html" class="w-[45px] h-[45px] leading-[45px]  duration-300 hover:bg-main hover:text-white border border-main rounded-full text-main flex items-center justify-center text-base relative">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                
+                  <span class="w-[22px] h-[22px] bg-black text-white rounded-full leading-[22px] text-center font-open-sans text-[12px] absolute -top-[6px] left-[27px]">0</span>
+                </a>
+          </div>
+
+
+          <!-- mobile menu show -->
+          <div class="flex items-center gap-6 lg:hidden">
+            <button
+              id="openOverlayBtn2"
+              class="px-5 py-2 bg-main text-white rounded-sm text-base hover:bg-primary duration-300"
+            >
+              Login
+            </button>
+
+            <a href="cart.html" class="w-[45px] h-[45px] leading-[45px]  duration-300 hover:bg-main hover:text-white border border-main rounded-full text-main flex items-center justify-center text-base relative">
+              <i class="fa-solid fa-bag-shopping"></i>
+            
+              <span class="w-[22px] h-[22px] bg-black text-white rounded-full leading-[22px] text-center font-open-sans text-[12px] absolute -top-[6px] left-[27px]">0</span>
+            </a>
+            <button id="toggleMobileMenu">
+              <div class="text-3xl text-bgray-900">
+                <span id="menuIcon" class="fa-solid fa-bars text-black"></span>
+              </div>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <!-- mobile menu bar start  -->
+      <div
+        id="mobileMenu"
+        class="h-screen w-9/12 fixed inset-y-0 left-0 z-40 bg-gray-100 transition-transform -translate-x-full border-e"
+      >
+        <div class="pt-8 flex justify-center">
+          <a href="index.html">
+            <img src="./img/logo.png" alt="" class="w-[70px]" />
+          </a>
+        </div>
+
+        <div class="flex h-screen flex-col justify-between">
+          <ul class="py-10">
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla active"
+                href="index.html"
+                >হোম
+              </a>
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="gallery.html"
+                >গ্যালারী</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="course-details.html"
+                >কোর্সসমূহ</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="about.html"
+                >আমাদের সর্ম্পকে</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="contact.html"
+                >যোগাযোগ করুন</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- mobile menu bar end lg:here -->
+    </header>
+    <!-- navbar part end -->
+
+
+      <!-- course banner part start  -->
+      <section class="course-bg lg:h-[325px] md:h-[250px] h-[200px] flex items-center justify-center">
+        <div class="flex flex-col gap-10 items-center justify-center w-full h-full z-50 relative">
+          <h2 class="text-white text-center text-3xl lg:text-6xl font-semibold uppercase">LEARN MORE course details</h2>
+          <!-- breadcrumbs -->
+         <ul class="flex text-white">
+          <li><a href="#" class="text-white text-[20px] font-normal pl-6 pr-6 ">Home</a></li>
+          <li class="text-white text-[20px] font-normal pl-6 pr-6 relative breadcrumb-list active">About</li>
+         </ul>
+      </div>
+      </section>
+      <!-- course banner part end -->
+
+
+      <!-- course details layer start here  -->
+      <section class="container">
+        <div class="grid lg:grid-cols-11 gap-10 mt-10">
+        <!-- course overview element -->
+        <div class="lg:col-span-8">
+
+          <div class="flex items-center gap-3">
+            <img src="./img/testi_avatar01.png" alt="">
+            <p class="text-xl font-normal">By <span class="text-main">  Addie Walters</span>
+            </p>
+          </div>
+
+          <div class="my-4 flex items-center justify-between w-full">
+             <div>
+              <h2 class="md:text-3xl text-[20px] font-semibold text-[#121212]">Improve editing skills</h2>
+              <div
+              class="flex items-center mt-3 gap-3 text-gray-700 pb-4"
+            >
+              <div class="flex items-center text-sm gap-1 text-[#e4cf11] ">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="font-semibold">
+                3.4 <span class="font-normal text-gray-500">(4,151)</span>
+              </p>
+              </div>
+             </div>
+
+              <div >
+                <button class="py-2 px-4 bg-main text-white text-base font-medium rounded-[8px] ">Marketing</button>
+              </div>
+          </div>
+          
+          <div class="course-img relative lg:h-[500px] md:h-[450px]">
+            <img src="./img/course/course_img-1.jpg" alt="" class="w-full h-full object-cover rounded-md">
+          </div>
+
+          <!-- tab section start -->
+          <div class="border border-border my-10">
+            <!-- tab-heading -->
+            <div class="flex items-center  bg-[#f3f3f3] border-b border-border tab-container">
+              <div onclick="openTab('tab1')" id="tab-1"class="tab relative active  md:px-[28px] px-[20px] md:py-[18px] py-[14px] w-full md:w-fit cursor-pointer hover:bg-main duration-300  bg-transparent text-[#242424] hover:text-white lg:text-[20px] md:text-[18px] text-base font-normal"> Overview</div>
+              <div onclick="openTab('tab2')" id="tab-2"class="tab relative   w-full md:w-fit cursor-pointer hover:bg-main duration-300 md:px-[28px] px-[20px] md:py-[18px] py-[14px] bg-transparent text-[#242424] hover:text-white lg:text-[20px] md:text-[18px] text-base font-normal"> Curriculum </div>
+              
+              <div onclick="openTab('tab3')" id="tab-3"class="tab relative   w-full md:w-fit cursor-pointer hover:bg-main duration-300 md:px-[28px] px-[20px] md:py-[18px] py-[14px] bg-transparent text-[#242424] hover:text-white lg:text-[20px] md:text-[18px] text-base font-normal"> Review</div>
+            </div>
+
+            <!-- overview tab -->
+            <div id="tab1" class="tab-content hidden active">
+              <h2 class="lg:text-2xl md:text-xl text-lg font-medium text-black">Overview</h2>
+
+              <div class="mt-5">
+                <p class="font-open-sans text-gray-800 md:text-base text-sm">
+                  our worldwide annual spend on digital advertising surpassing $325 billion, it’s no surprise that different apches to online marketing are becoming available. One of these new approaches is performance or digital performance marketing. Keep reading to learn all about performance marketing, from how it works to it compares to digital marketing. Plus, get insight into the benefits and risks of performance marketing and how itcan affect your company’s long-term success and profitability. Performance marketing is an approach to digitalmarketing or advertising where businesses only pay when a specific result occurs. This result could be a new lead,sale, or other outcome agreed upon by the advertiser and business. Performance marketing involves channels such as affiliate marketing, online advertising.
+                </p>
+                  <ul class="overview-features mt-8 text-gray-800 font-open-sans font-medium">
+                    <li>Another way to promote reflection, not perfection</li>
+                    <li>This practice will help students think interdependently</li>
+                    <li>Self-reflection requires courage and patience</li>
+                    <li>Teaching students to be self-reflective will give them a skill</li>
+                  </ul>
+                  
+              </div>
+            </div>
+
+            <!-- curriculum tab here -->
+        
+            <div id="tab2" class="tab-content curriculumn">
+              <h2 class="lg:text-2xl md:text-xl text-lg font-medium text-black">Starting beginners level course</h2>
+
+              <div class="mt-5">
+                <p class="font-open-sans text-gray-800">
+                  our worldwide annual spend on digital advertising surpassing $325 billion, it’s no surprise that different apches to online marketing are becoming available. F approach to digitalmarketing or advertising where businesses only pay when a specific result occurs. This result could be a new. Performance marketing involves channels such as affiliate marketing, online advertising.
+                </p>
+
+                <div class="mt-10">
+                  <div class="flex items-center justify-between pb-5 border-b border-border">
+                    <div class="flex items-center">
+                      <span class="w-[35px] h-[35px] leading-[35px] text-center rounded-full bg-indigo-700 inline-block"><i class="fa-solid fa-play text-white text-lg"></i></span>
+                        <a href="#" class="ml-8 text-[20px]">Introduction to Editing</a>
+                    </div>
+                    <p class="text-gray-500">16 minutes</p>
+                  </div>
+
+                  <div class="flex items-center justify-between pb-5 border-b border-border my-4">
+                    <div class="flex items-center">
+                      <span class="w-[35px] h-[35px] leading-[35px] text-center rounded-full bg-[#f16101] inline-block"><i class="fa-solid fa-file text-white text-lg"></i></span>
+                        <a href="#" class="ml-8 text-[20px]">Basic Editing Technology</a>
+                    </div>
+                    <p class="text-gray-500">16 minutes</p>
+                  </div>
+
+                  <div class="flex items-center justify-between pb-5 border-b border-border">
+                    <div class="flex items-center">
+                      <span class="w-[35px] h-[35px] leading-[35px] text-center rounded-full bg-[#d23f3f] inline-block"><i class="fa-solid fa-message text-white text-lg"></i></span>
+                        <a href="#" class="ml-8 text-[20px]">Quiz</a>
+                    </div>
+                    <p class="text-gray-500">16 minutes</p>
+                  </div>
+
+
+
+                </div>
+              </div>
+            </div>
+        
+            <!-- review tab -->
+            <div id="tab3" class="tab-content">
+              <h2 class="lg:text-2xl md:text-xl text-lg font-medium text-black">Reviews</h2>
+
+              <div class="mt-8">
+               <div class="lg:flex lg:gap-20 gap-10 w-full flew-row items-center">
+                  <div class="flex justify-center">
+                    <div class="w-[200px] h-[200px] rounded-full bg-gray-100 flex items-center justify-center flex-col ">
+                      <h2 class="text-3xl text-black">4.6</h2>
+                      <div class="flex items-center text-sm gap-1 text-[#e4cf11] my-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <h1 class="text-main text-xl">Top Rating</h1>
+                    </div>
+                  </div>
+
+                <div class="w-full">
+                  <div class="mb-4">
+                    <p class="text-lg font-semibold text-neutral-500 mb-2">5 Stars</p>
+                    <div>
+                      <div class=" w-full h-[10px] bg-gray-200 ">
+                        <div class="w-[76%] h-full bg-main"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <p class="text-lg font-semibold text-neutral-500 mb-2">4 Stars</p>
+                    <div>
+                      <div class=" w-full h-[10px] bg-gray-200 ">
+                        <div class="w-[76%] h-full bg-main"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <p class="text-lg font-semibold text-neutral-500 mb-2">3 Stars</p>
+                    <div>
+                      <div class=" w-full h-[10px] bg-gray-200 ">
+                        <div class="w-[76%] h-full bg-main"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <p class="text-lg font-semibold text-neutral-500 mb-2">2 Stars</p>
+                    <div>
+                      <div class=" w-full h-[10px] bg-gray-200 ">
+                        <div class="w-[76%] h-full bg-main"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <p class="text-lg font-semibold text-neutral-500 mb-2">1 Stars</p>
+                    <div>
+                      <div class=" w-full h-[10px] bg-gray-200 ">
+                        <div class="w-[76%] h-full bg-main"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+              </div>
+
+              <div class="mt-10">
+                <div>
+                <div class="flex items-center justify-between flex-wrap">
+                  <div class="flex items-center gap-3">
+                    <img src="./img/testi_avatar01.png" alt="">
+                    <div>
+                      <h2 class="text-xl text-black font-medium">Lina David</h2>
+                      <div class="flex items-center text-sm gap-1 text-[#e4cf11] mt-2">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-2 text-gray-400">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>3 Month</span>
+                  </div>
+                </div>
+                <p class="mt-4 text-base font-medium font-open-sans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, voluptate? Ipsa explicabo totam iusto possimus, molestiae ratione atque ad consequatur odit dicta, magnam iste labore, quam ex voluptatum id rerum?</p>
+              </div>
+
+              
+                <div class="mt-5">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <img src="./img/testi_avatar01.png" alt="">
+                    <div>
+                      <h2 class="text-xl text-black">Lina David</h2>
+                      <div class="flex items-center text-sm gap-1 text-[#e4cf11] mt-2">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-2 text-gray-400">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>3 Month</span>
+                  </div>
+                </div>
+                <p class="mt-4 text-base font-medium font-open-sans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, voluptate? Ipsa explicabo totam iusto possimus, molestiae ratione atque ad consequatur odit dicta, magnam iste labore, quam ex voluptatum id rerum?</p>
+              </div>
+
+
+              </div>
+            </div>
+          </div>
+
+      
+        </div>
+
+          <!-- course price element -->
+          <div class="lg:col-span-3 ">
+           <div class="p-4 bg-[#fff] border border-border sticky top-[130px]">
+            <div class="w-full h-[250px] relative">
+              <img src="./img/course/course-bg.png" alt="" class="w-full h-full object-cover rounded-[5px]">
+              <div class="overlay"></div>
+              <span class="w-[50px] h-[50px] shadow-xl duration-300 hover:shadow-none bg-indigo-700 rounded-full flex items-center justify-center middle-icon">
+                <i class="fa-solid fa-play text-lg text-white"></i>
+              </span>
+            </div>
+            <div class="flex items-center justify-between py-3 mt-5">
+              <h2 class="text-xl text-black font-medium">$49.45</h2>
+              <p class="text-xl text-gray-600 font-normal">50%off</p>
+            </div>
+            <button class="w-full bg-transparent text-main border-main  text-xl font-normal mt-5 rounded-[5px] py-2 hover:text-white hover:bg-main duration-300 border">Add to cart</button>
+            <button class="w-full bg-main text-white text-xl font-normal mt-5 rounded-[5px] py-2 hover:bg-[#25ded0]">Buy Now</button>
+           </div>
+          </div>
+        </div>
+      </section>
+      <!-- course details layer end here  -->
+
+      <!-- recent courses  start -->
+      <section class="container py-20">
+         <!-- section title -->
+         <div class="text-center lg:mb-14 mb-5">
+          <h2
+            class="text-main lg:text-5xl md:text-3xl text-3xl font-bold font-trio-bangla"
+          >
+            Recent Courses
+          </h2>
+        </div>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mt-10">
+          <div
+            class="w-full lg:lg:max-w-[300px] overflow-hidden bg-white rounded-lg shadow-lg relative"
+          >
+            <img
+              class="object-cover object-center w-full h-56"
+              src="./img/top_courses_thumb02.jpg"
+              alt="avatar"
+            />
+            <div class="absolute top-[20px] left-0">
+              <div
+                class="w-[100px] h-8 flex items-center px-4 bg-primary text-base font-semibold uppercase relative popular text-white"
+              >
+                Popular
+              </div>
+            </div>
+
+            <div class="px-6 pt-8 pb-5">
+              <h1 class="text-sm font-medium text-black">
+                In
+                <span class="text-main italic font-medium"
+                  >Beginner Course</span
+                >
+              </h1>
+
+              <p class="py-2 text-black font-medium text-lg text-capitalize">
+                Complete Office Application Program
+              </p>
+
+              <div
+                class="flex items-center mt-3 gap-3 text-gray-700 border-b border-border pb-4"
+              >
+                <div class="flex items-center text-sm gap-1 text-[#e4cf11]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="font-semibold">
+                  3.4 <span class="font-normal text-gray-500">(4,151)</span>
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between pt-2">
+                <p class="text-black font-semibold text-sm">
+                  By
+                  <a href="#" class="text-gray-500 hover:text-main"
+                    >Jose Portilla</a
+                  >
+                </p>
+                <h6 class="text-base font-medium text-black">$500</h6>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full lg:max-w-[300px] overflow-hidden bg-white rounded-lg shadow-lg relative"
+          >
+            <img
+              class="object-cover object-center w-full h-56"
+              src="./img/top_courses_thumb04.jpg"
+              alt="avatar"
+            />
+            <div class="absolute top-[20px] left-0">
+              <div
+                class="w-[100px] h-8 flex items-center px-4 bg-primary text-base font-semibold uppercase relative popular text-white"
+              >
+                Popular
+              </div>
+            </div>
+
+            <div class="px-6 pt-8 pb-5">
+              <h1 class="text-sm font-semibold text-black">
+                In
+                <span class="text-main italic font-semibold"
+                  >Beginner Course</span
+                >
+              </h1>
+
+              <p class="py-2 text-black font-medium text-lg text-capitalize">
+                Complete Office Application Program
+              </p>
+
+              <div
+                class="flex items-center mt-3 gap-3 text-gray-700 border-b border-border pb-4"
+              >
+                <div class="flex items-center text-sm gap-1 text-[#e4cf11]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="font-semibold">
+                  3.4 <span class="font-normal text-gray-500">(4,151)</span>
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between pt-2">
+                <p class="text-black font-semibold text-sm">
+                  By
+                  <a href="#" class="text-gray-500 hover:text-main"
+                    >Jose Portilla</a
+                  >
+                </p>
+                <h6 class="text-base font-semibold text-black">$500</h6>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full lg:max-w-[300px] overflow-hidden bg-white rounded-lg shadow-lg relative"
+          >
+            <img
+              class="object-cover object-center w-full h-56"
+              src="./img/top_courses_thumb06.jpg"
+              alt="avatar"
+            />
+            <div class="absolute top-[20px] left-0">
+              <div
+                class="w-[100px] h-8 flex items-center px-4 bg-primary text-base font-semibold uppercase relative popular text-white"
+              >
+                Popular
+              </div>
+            </div>
+
+            <div class="px-6 pt-8 pb-5">
+              <h1 class="text-sm font-medium text-black">
+                In
+                <span class="text-main italic font-medium"
+                  >Beginner Course</span
+                >
+              </h1>
+
+              <p class="py-2 text-black font-medium text-lg text-capitalize">
+                Complete Office Application Program
+              </p>
+
+              <div
+                class="flex items-center mt-3 gap-3 text-gray-700 border-b border-border pb-4"
+              >
+                <div class="flex items-center text-sm gap-1 text-[#e4cf11]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="font-semibold">
+                  3.4 <span class="font-normal text-gray-500">(4,151)</span>
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between pt-2">
+                <p class="text-black font-semibold text-sm">
+                  By
+                  <a href="#" class="text-gray-500 hover:text-main"
+                    >Jose Portilla</a
+                  >
+                </p>
+                <h6 class="text-base font-semibold text-black">$500</h6>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full lg:max-w-[300px] overflow-hidden bg-white rounded-lg shadow-lg relative"
+          >
+            <img
+              class="object-cover object-center w-full h-56"
+              src="./img/top_courses_thumb07.jpg"
+              alt="avatar"
+            />
+            <div class="absolute top-[20px] left-0">
+              <div
+                class="w-[100px] h-8 flex items-center px-4 bg-primary text-base font-semibold uppercase relative popular text-white"
+              >
+                Popular
+              </div>
+            </div>
+
+            <div class="px-6 pt-8 pb-5">
+              <h1 class="text-sm font-medium text-black">
+                In
+                <span class="text-main italic font-medium"
+                  >Beginner Course</span
+                >
+              </h1>
+
+              <p class="py-2 text-black font-medium text-lg text-capitalize">
+                Complete Office Application Program
+              </p>
+
+              <div
+                class="flex items-center mt-3 gap-3 text-gray-700 border-b border-border pb-4"
+              >
+                <div class="flex items-center text-sm gap-1 text-[#e4cf11]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="font-semibold">
+                  3.4 <span class="font-normal text-gray-500">(4,151)</span>
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between pt-2">
+                <p class="text-black font-semibold text-sm">
+                  By
+                  <a href="#" class="text-gray-500 hover:text-main"
+                    >Jose Portilla</a
+                  >
+                </p>
+                <h6 class="text-base font-semibold text-black">$500</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- recent courses  end-->
+      
+
+
+
+
+
+      <!-- footer section start  -->
+    <footer class="bg-[#242424] lg:py-[70px] md:py-10 py-8">
+      <div class="container">
+        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-6">
+          <!-- 1st column -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-white text-xl font-medium">About Us</h2>
+            </div>
+            <div class="font-trio-bangla text-white">
+              <p class="text-sm">
+                গণপ্রজাতন্ত্রী বাংলাদেশ সরকার কর্তৃক অনুমোদিত
+              </p>
+              <h5 class="text-lg mt-3">যুব উন্নয়ন</h5>
+              <h3 class="text-lg">কম্পিউটার ও শর্টহ্যান্ড প্রশিক্ষণ কেন্দ্র</h3>
+
+              <!-- social icons -->
+              <ul
+                class="flex items-center social-icons gap-3 justify-start mt-4"
+              >
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 2nd column  -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-white text-xl font-medium">Quick Links</h2>
+            </div>
+            <div>
+              <ul class="quick-links">
+                <li>
+                  <a href="#"> home </a>
+                </li>
+                <li>
+                  <a href="#"> About Us </a>
+                </li>
+                <li>
+                  <a href="#"> Gallery </a>
+                </li>
+                <li>
+                  <a href="#"> Portfoilo </a>
+                </li>
+                <li>
+                  <a href="#"> Blog </a>
+                </li>
+                <li>
+                  <a href="#"> Contact Us </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 3rd column  -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-white text-xl font-medium">Popular Courses</h2>
+            </div>
+
+            <div class="footer-courses">
+              <ul>
+                <li>
+                  <div class="f-courses-thumb">
+                    <a href="#"
+                      ><img src="./img/f_courses_thumb01.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="f-courses-content">
+                    <h5>
+                      <a href="#"
+                        >Access 2016 Essential Training Training Examples</a
+                      >
+                    </h5>
+                    <span>Tonoy Pueyo</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="f-courses-thumb">
+                    <a href="#"
+                      ><img src="./img/f_courses_thumb02.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="f-courses-content">
+                    <h5>
+                      <a href="#"
+                        >Access 2016 Essential Training Training Examples</a
+                      >
+                    </h5>
+                    <span>Tonoy Pueyo</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 4th column  -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-white text-xl font-medium">Twitter Feed</h2>
+            </div>
+
+            <div class="fw-tweet-post">
+              <ul>
+                <li>
+                  <i class="fab fa-twitter"></i>
+                  <div class="fw-tweet-post-content">
+                    <p>
+                      Here comes <a href="#">https://t.ew/ARkjsdsd</a> This
+                      stellar #theme is made for any type of
+                    </p>
+                    <span>3 months ago</span>
+                  </div>
+                </li>
+                <li>
+                  <i class="fab fa-twitter"></i>
+                  <div class="fw-tweet-post-content">
+                    <p>
+                      Here comes <a href="#">https://t.ew/ARkjsdsd</a> This
+                      stellar #theme is made for any type of modern…
+                      <a href="#">https://t.ew/ARkjsdsd</a>
+                    </p>
+                    <span>3 months ago</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright-area bg-[#1b1b1b] py-7 text-white">
+      <div class="flex justify-center">
+        <div class="copyright-text">
+          <p>COPYRIGHT © 2024. ALL RIGHTS RESERVED CLASIC IT.</p>
+        </div>
+      </div>
+    </div>
+    <!-- footer section end -->
+
+
+
+
+   <!-- slick slider js link  -->
+   <script
+   type="text/javascript"
+   src="//code.jquery.com/jquery-1.11.0.min.js"
+ ></script>
+ <script
+   type="text/javascript"
+   src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+ ></script>
+ <script type="text/javascript" src="./js/slick.min.js"></script>
+ <!-- main js file -->
+ <script src="./js/app.js"></script>
+
+</body>
+</html>

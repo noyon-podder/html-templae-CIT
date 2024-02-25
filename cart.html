@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--   awesome link  -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- font bangla  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind connect with CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- slick slider link -->
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Educational Website</title>
+  </head>
+  <body class="bg-[#f1f1f1]">
+     <!-- top header part start -->
+     <div>
+      <div class="border-b-2 border-main">
+        <div class="md:container">
+          <div class="flex items-center">
+            <div class="px-4 bg-main py-1">
+              <h2
+                class="text-white lg:text-xl text-lg font-normal font-trio-bangla"
+              >
+                নোটিশ
+              </h2>
+            </div>
+            <marquee
+              behavior="scroll"
+              direction="left"
+              onmouseover="this.stop()"
+              onmouseout="this.start()"
+              class="text-base text-black font-semibold"
+              >ভর্তি বিজ্ঞপ্তিঃ আমাদের সকল আঞ্চলিক শাখায় তিন ও ছয় মাস মেয়াদী
+              অফিস এ্যাপ্লিকেশন কোর্সে জুনয়ারি - জুন এবং জুনয়ারি - মার্চ ২০২৪
+              সেশনে ভর্তি চলছে ।বিঃ দ্রঃ ভর্তি প্রক্রিয়া অনলান।
+            </marquee>
+          </div>
+        </div>
+      </div>
+      <!-- follow us div -->
+      <div class="bg-main text-white mt-[2px]">
+        <div class="container">
+          <div
+            class="flex items-center lg:justify-between lg:flex-row flex-col gap-2 w-full py-1"
+          >
+            <p class="flex items-center gap-x-2 font-open-sans">
+              <i class="fa-regular fa-envelope"></i>
+              <span class="font-medium text-base">fake@gmail.com</span>
+            </p>
+            <div class="flex items-center gap-x-4 font-open-sans">
+              <span class="text-base font-semibold">Follow Us: </span>
+              <ul class="flex items-center gap-x-4">
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- top header part end -->
+
+    <!-- navbar part start  -->
+    <header
+      id="header"
+      class="bg-white border-b border-border lg:drop-shadow-xl py-1 duration-300 ease-in"
+    >
+      <div class="container">
+        <nav class="flex justify-between items-center bg-white">
+          <div>
+            <a href="index.html">
+              <img
+                src="./img/logo.png"
+                alt=""
+                class="lg:w-[70px] md:w-[65px] w-[60px] w-[60px] logo"
+              />
+            </a>
+          </div>
+          <div class="hidden lg:block">
+            <div class="navbar-wrap">
+              <ul
+                class="flex md:flex-row flex-col md:items-center xl:gap-2 z-50 bg-white w-full z-50 bg-white py-10 lg:py-0 pl-3 lg:pl-0"
+              >
+                <li class="active">
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg lg:text-sm" href="index.html">Home </a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="course.html">Courses</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="contact.html">Contact Us</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="event.html">Event</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="news.html">News</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <div class="lg:flex hidden items-center gap-5 ">
+            <button
+                  id="openOverlayBtn"
+                  class="px-5 py-2 bg-main text-white rounded-sm text-[18px] hover:bg-primary duration-300"
+                >
+                  Login
+                </button>
+
+                <a href="cart.html" class="w-[45px] h-[45px] leading-[45px]  duration-300 hover:bg-main hover:text-white border border-main rounded-full text-main flex items-center justify-center text-base relative">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                
+                  <span class="w-[22px] h-[22px] bg-black text-white rounded-full leading-[22px] text-center font-open-sans text-[12px] absolute -top-[6px] left-[27px]">0</span>
+                </a>
+          </div>
+
+
+          <!-- mobile menu show -->
+          <div class="flex items-center gap-6 lg:hidden">
+            <button
+              id="openOverlayBtn2"
+              class="px-5 py-2 bg-main text-white rounded-sm text-base hover:bg-primary duration-300"
+            >
+              Login
+            </button>
+
+            <a href="cart.html" class="w-[45px] h-[45px] leading-[45px]  duration-300 hover:bg-main hover:text-white border border-main rounded-full text-main flex items-center justify-center text-base relative">
+              <i class="fa-solid fa-bag-shopping"></i>
+            
+              <span class="w-[22px] h-[22px] bg-black text-white rounded-full leading-[22px] text-center font-open-sans text-[12px] absolute -top-[6px] left-[27px]">0</span>
+            </a>
+            <button id="toggleMobileMenu">
+              <div class="text-3xl text-bgray-900">
+                <span id="menuIcon" class="fa-solid fa-bars text-black"></span>
+              </div>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <!-- mobile menu bar start  -->
+      <div
+        id="mobileMenu"
+        class="h-screen w-9/12 fixed inset-y-0 left-0 z-40 bg-gray-100 transition-transform -translate-x-full border-e"
+      >
+        <div class="pt-8 flex justify-center">
+          <a href="index.html">
+            <img src="./img/logo.png" alt="" class="w-[70px]" />
+          </a>
+        </div>
+
+        <div class="flex h-screen flex-col justify-between">
+          <ul class="py-10">
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla active"
+                href="index.html"
+                >হোম
+              </a>
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="gallery.html"
+                >গ্যালারী</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="course-details.html"
+                >কোর্সসমূহ</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="about.html"
+                >আমাদের সর্ম্পকে</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="contact.html"
+                >যোগাযোগ করুন</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- mobile menu bar end lg:here -->
+    </header>
+    <!-- navbar part end -->
+
+    <!-- course banner part start  -->
+    <section class="course-bg lg:h-[325px] md:h-[250px] h-[200px] flex items-center justify-center">
+      <div class="flex flex-col gap-10 items-center justify-center w-full h-full z-50 relative">
+        <h2 class="text-white text-center text-3xl lg:text-6xl font-semibold uppercase">LEARN MORE course details</h2>
+        <!-- breadcrumbs -->
+       <ul class="flex text-white">
+        <li><a href="#" class="text-white text-[20px] font-normal pl-6 pr-6 ">Home</a></li>
+        <li class="text-white text-[20px] font-normal pl-6 pr-6 relative breadcrumb-list active">Cart</li>
+       </ul>
+    </div>
+    </section>
+    <!-- course banner part end -->
+
+    <!-- cart section start  -->
+    <section class="py-10 container">
+      <div class="grid lg:grid-cols-8 gap-8">
+        <div class="lg:col-span-6 overflow-hidden">
+          <!-- cart table part start  -->
+          <div class="flex flex-col">
+            <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div
+                class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8"
+              >
+                <div
+                  class="overflow-hidden border border-gray-200 md:rounded-lg"
+                >
+                  <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                      <tr>
+                        <th
+                          scope="col"
+                          class="py-3.5 px-4 text-sm font-normal text-left rtl:text-right text-gray-500"
+                        >
+                          Image
+                        </th>
+
+                        <th
+                          scope="col"
+                          class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500"
+                        >
+                          Product
+                        </th>
+
+                        <th
+                          scope="col"
+                          class="px-12 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500"
+                        >
+                          Price
+                        </th>
+
+                        <!-- <th
+                          scope="col"
+                          class="px-4 py-3.5 text-sm font-normal text-center rtl:text-right text-gray-500"
+                        >
+                          Quantity
+                        </th> -->
+
+                        <th
+                          scope="col"
+                          class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500"
+                        >
+                          Total
+                        </th>
+
+                        <th
+                          scope="col"
+                          class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500"
+                        >
+                          Remove
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                      <tr>
+                        <td
+                          class="px-4 py-4 text-sm font-medium whitespace-nowrap"
+                        >
+                          <div class="w-[100px]">
+                            <img
+                              src="./img/course/course_img-1.jpg"
+                              alt=""
+                              class="w-full h-full object-cover"
+                            />
+                          </div>
+                        </td>
+
+                        <td class="px-4 py-4 text-sm whitespace-nowrap">
+                          <div>
+                            <h4
+                              class="text-black duration-300 hover:text-main cursor-pointer"
+                            >
+                              The Complete Histudy 2024: From Zero to Expert!
+                            </h4>
+                          </div>
+                        </td>
+
+                        <td
+                          class="px-12 py-4 text-sm font-medium whitespace-nowrap"
+                        >
+                          <h2>$300.00</h2>
+                        </td>
+
+                        <!-- Quantity part here  -->
+                        <!-- <td class="px-4 py-4 text-sm whitespace-nowrap">
+                          <div
+                            class="flex items-center gap-3 border border-border py-4 justify-center rounded-md px-2"
+                          >
+                            <button class="hover:text-main font-semibold">
+                              <i class="fas fa-minus"></i>
+                            </button>
+                            <div class="w-[40px] h-[20px] text-center">4</div>
+                            <button class="hover:text-main font-semibold">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                        </td> -->
+
+                        <td class="px-4 py-4 text-sm whitespace-nowrap">
+                          <h2 class="text-lg text-main">$1200.00</h2>
+                        </td>
+
+                        <td
+                          class="px-4 py-4 text-sm whitespace-nowrap text-center cursor-pointer"
+                        >
+                          <h2><i class="fas fa-xmark text-xl"></i></h2>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td
+                          class="px-4 py-4 text-sm font-medium whitespace-nowrap"
+                        >
+                          <div>
+                            <img
+                              src="./img/course/course_img-1.jpg"
+                              alt=""
+                              class="w-[100px]"
+                            />
+                          </div>
+                        </td>
+
+                        <td class="px-4 py-4 text-sm whitespace-nowrap">
+                          <div>
+                            <h4
+                              class="text-black duration-300 hover:text-main cursor-pointer"
+                            >
+                              The Complete Histudy 2024: From Zero to Expert!
+                            </h4>
+                          </div>
+                        </td>
+
+                        <td
+                          class="px-12 py-4 text-sm font-medium whitespace-nowrap"
+                        >
+                          <h2>$300.00</h2>
+                        </td>
+
+                        
+
+                        <td class="px-4 py-4 text-sm whitespace-nowrap">
+                          <h2 class="text-lg text-main">$1200.00</h2>
+                        </td>
+
+                        <td
+                          class="px-4 py-4 text-sm whitespace-nowrap text-center cursor-pointer"
+                        >
+                          <h2><i class="fas fa-xmark text-xl"></i></h2>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td
+                          class="px-4 py-4 text-sm font-medium whitespace-nowrap"
+                        >
+                          <div>
+                            <img
+                              src="./img/course/course_img-1.jpg"
+                              alt=""
+                              class="w-[100px]"
+                            />
+                          </div>
+                        </td>
+
+                        <td class="px-4 py-4 text-sm whitespace-nowrap">
+                          <div>
+                            <h4
+                              class="text-black duration-300 hover:text-main cursor-pointer"
+                            >
+                              The Complete Histudy 2024: From Zero to Expert!
+                            </h4>
+                          </div>
+                        </td>
+
+                        <td
+                          class="px-12 py-4 text-sm font-medium whitespace-nowrap"
+                        >
+                          <h2>$300.00</h2>
+                        </td>
+
+                        
+
+                        <td class="px-4 py-4 text-sm whitespace-nowrap">
+                          <h2 class="text-lg text-main">$1200.00</h2>
+                        </td>
+
+                        <td
+                          class="px-4 py-4 text-sm whitespace-nowrap text-center cursor-pointer"
+                        >
+                          <h2><i class="fas fa-xmark text-xl"></i></h2>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- cart table part end -->
+        </div>
+        <div class="lg:col-span-2">
+            <div class="py-3 bg-white border border-[#f9f9f9] shadow-md"> 
+                
+                <div class="py-2 border-b border-border">
+                    <div class="flex items-center justify-between py-2 px-4">
+                        <p><b>3</b> Items</p>
+                        <p>$597.00</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-2 pb-4 px-4">
+                        <p>Shipping</p>
+                        <p>$7.00</p>
+                    </div>
+                </div>
+
+                
+                <div class="py-2 border-b border-border">
+                    <div class="flex items-center justify-between py-2 px-4">
+                        <p>Total (tax excl.)</p>
+                        <p>$604.00</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-2 pb-4 px-4">
+                        <p>Taxes</p>
+                        <p>$0.00</p>
+                    </div>
+                </div>
+
+                <div class="py-3 flex justify-center">
+                    <button class="px-8 rounded-sm hover:bg-primary duration-300 ease-in py-2 bg-main text-white text-base font-medium ">Checkout</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- cart section end -->
+
+    <!-- new cart part start  -->
+    <section class="container px-4 mx-auto"></section>
+    <!-- new cart part end -->
+
+    <script src="./tailwind.config.js"></script>
+  </body>
+</html>

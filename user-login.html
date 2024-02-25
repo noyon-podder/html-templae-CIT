@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--   awesome link  -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- font bangla  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind connect with CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- slick slider link -->
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Educational Website | User Login</title>
+  </head>
+  <body>
+    <div class="bg-white">
+      <div class="flex justify-center h-screen">
+        <div
+          class="hidden bg-cover lg:block lg:w-2/3 bg-center"
+          style="
+            background-image: url(https://cdn.pixabay.com/photo/2014/09/20/23/43/keypad-454453_960_720.jpg);
+          "
+        >
+          <div class="flex items-center h-full px-20 bg-gray-900 bg-opacity-40">
+            <div>
+              <h2 class="text-2xl font-bold text-white sm:text-3xl">
+                What's the new SDTL
+              </h2>
+
+              <p class="max-w-xl mt-3 text-gray-300">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                autem ipsa, nulla laboriosam dolores, repellendus perferendis
+                libero suscipit nam temporibus molestiae
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center w-full max-w-md px-6 mx-auto lg:w-2/6">
+          <div class="flex-1">
+            <div class="text-center">
+              <div class="flex justify-center mx-auto">
+                <a href="index.html">
+                  <img
+                    class="lg:w-[100px] w-[80px]"
+                    src="./img/logo.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <p class="mt-8 font-semibold text-xl text-black">User Login</p>
+            </div>
+
+            <div class="mt-3">
+              <form>
+                <div>
+                  <label for="email" class="block mb-2 text-sm text-gray-600"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="example@example.com"
+                    class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg focus:outline-main"
+                  />
+                </div>
+
+                <div class="mt-6">
+                  <div class="flex justify-between mb-2">
+                    <label for="password" class="text-sm text-gray-600"
+                      >Password</label
+                    >
+                    <a
+                      href="#"
+                      class="text-sm text-gray-400 focus:text-blue-500 hover:text-blue-500 hover:underline"
+                      >Forgot password?</a
+                    >
+                  </div>
+
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Your Password"
+                    class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg focus:outline-main"
+                  />
+                </div>
+
+                <div class="mt-6">
+                  <button
+                    class="w-full px-4 py-2 tracking-wide text-white transition-colors duration-300 bg-main rounded-lg hover:bg-primary focus:outline-none focus:bg-green-600"
+                  >
+                    Sign in
+                  </button>
+                </div>
+              </form>
+
+              <!-- role select tab  -->
+              <div
+                class="w-full capitalize cursor-pointer text-white grid grid-cols-2 mt-4 text-center rounded-md admin-login"
+              >
+                <div
+                  class="py-[10px] text-sm bg-[#0084b4] rounded-s-md tab-button"
+                  onclick="openTab('student')"
+                  id="student"
+                >
+                  <p class="flex items-center xl:gap-3 lg:gap-2 gap-3 justify-center">
+                    <i class="fa-solid fa-user"></i> Student
+                  </p>
+                </div>
+                
+                <div
+                  class="py-[10px] text-sm bg-[#1bbed3] rounded-e-md tab-button"
+                  onclick="openTab('parent')"
+                  id="parent"
+                >
+                  <p class="flex items-center xl:gap-3 lg:gap-2 gap-3 justify-center">
+                    <i class="fa-solid fa-users"></i> Parents
+                  </p>
+                </div>
+              </div>
+
+              <p class="mt-6 text-sm flex items-center gap-6 justify-end text-gray-400">
+                <a href="index.html" class="flex items-center gap-2 hover:underline text-black text-[14px]">
+                    <i class="fa-brands fa-empire"></i>
+                    Front Site
+                </a>
+
+                <a href="admin-login.html" class="flex items-center gap-2 hover:underline text-black text-[14px]">
+                    <i class="fas fa-user"></i>
+                    Admin Login
+                </a>
+               
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./tailwind.config.js"></script>
+
+    <script>
+      //  select user role tab
+      function openTab(tabId) {
+        // Get all tab buttons and contents
+        let tabButtons = document.querySelectorAll(".tab-button");
+        // var tabContents = document.querySelectorAll(".tab-content");
+
+        // Hide all tab contents
+        // tabContents.forEach(function (tabContent) {
+        //   tabContent.classList.remove("active");
+        // });
+
+        // Deactivate all tab buttons
+        tabButtons.forEach(function (tabButton) {
+          tabButton.classList.remove("active");
+        });
+
+        // Activate the selected tab content and button
+        document.getElementById(tabId).classList.add("active");
+        event.currentTarget.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

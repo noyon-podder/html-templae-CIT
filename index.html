@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--   awesome link  -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- font bangla  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind connect with CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- slick slider link -->
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Educational Website</title>
+  </head>
+  <body>
+    <!-- top header part start -->
+    <div>
+      <div class="border-b-2 border-main">
+        <div class="md:container">
+          <div class="flex items-center">
+            <div class="px-4 bg-main py-1">
+              <h2
+                class="text-white lg:text-xl text-lg font-normal font-trio-bangla"
+              >
+                নোটিশ
+              </h2>
+            </div>
+            <marquee
+              behavior="scroll"
+              direction="left"
+              onmouseover="this.stop()"
+              onmouseout="this.start()"
+              class="text-base text-black font-semibold"
+              >ভর্তি বিজ্ঞপ্তিঃ আমাদের সকল আঞ্চলিক শাখায় তিন ও ছয় মাস মেয়াদী
+              অফিস এ্যাপ্লিকেশন কোর্সে জুনয়ারি - জুন এবং জুনয়ারি - মার্চ ২০২৪
+              সেশনে ভর্তি চলছে ।বিঃ দ্রঃ ভর্তি প্রক্রিয়া অনলান।
+            </marquee>
+          </div>
+        </div>
+      </div>
+      <!-- follow us div -->
+      <div class="bg-main text-white mt-[2px]">
+        <div class="container">
+          <div
+            class="flex items-center lg:justify-between lg:flex-row flex-col gap-2 w-full py-1"
+          >
+            <p class="flex items-center gap-x-2 font-open-sans">
+              <i class="fa-regular fa-envelope"></i>
+              <span class="font-medium text-base">fake@gmail.com</span>
+            </p>
+            <div class="flex items-center gap-x-4 font-open-sans">
+              <span class="text-base font-semibold">Follow Us: </span>
+              <ul class="flex items-center gap-x-4">
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- top header part end -->
+
+    <!-- navbar part start  -->
+    <header
+      id="header"
+      class="bg-white border-b border-border lg:drop-shadow-xl py-1 duration-300 ease-in"
+    >
+      <div class="container">
+        <nav class="flex justify-between items-center bg-white">
+          <div>
+            <a href="index.html">
+              <img
+                src="./img/logo.png"
+                alt=""
+                class="lg:w-[70px] md:w-[65px] w-[60px] w-[60px] logo"
+              />
+            </a>
+          </div>
+          <div class="hidden lg:block">
+            <div class="navbar-wrap">
+              <ul
+                class="flex md:flex-row flex-col md:items-center xl:gap-2 z-50 bg-white w-full z-50 bg-white py-10 lg:py-0 pl-3 lg:pl-0"
+              >
+                <li class="active">
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg lg:text-sm" href="index.html">Home </a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="course.html">Courses</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="contact.html">Contact Us</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="event.html">Event</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="news.html">News</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <div class="lg:flex hidden items-center gap-5 ">
+            <button
+                  id="openOverlayBtn"
+                  class="px-5 py-2 bg-main text-white rounded-sm text-[18px] hover:bg-primary duration-300"
+                >
+                  Login
+                </button>
+
+                <a href="cart.html" class="w-[45px] h-[45px] leading-[45px]  duration-300 hover:bg-main hover:text-white border border-main rounded-full text-main flex items-center justify-center text-base relative">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                
+                  <span class="w-[22px] h-[22px] bg-black text-white rounded-full leading-[22px] text-center font-open-sans text-[12px] absolute -top-[6px] left-[27px]">0</span>
+                </a>
+          </div>
+
+
+          <!-- mobile menu show -->
+          <div class="flex items-center gap-6 lg:hidden">
+            <button
+              id="openOverlayBtn2"
+              class="px-5 py-2 bg-main text-white rounded-sm text-base hover:bg-primary duration-300"
+            >
+              Login
+            </button>
+
+            <a href="cart.html" class="w-[45px] h-[45px] leading-[45px]  duration-300 hover:bg-main hover:text-white border border-main rounded-full text-main flex items-center justify-center text-base relative">
+              <i class="fa-solid fa-bag-shopping"></i>
+            
+              <span class="w-[22px] h-[22px] bg-black text-white rounded-full leading-[22px] text-center font-open-sans text-[12px] absolute -top-[6px] left-[27px]">0</span>
+            </a>
+            <button id="toggleMobileMenu">
+              <div class="text-3xl text-bgray-900">
+                <span id="menuIcon" class="fa-solid fa-bars text-black"></span>
+              </div>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <!-- mobile menu bar start  -->
+      <div
+        id="mobileMenu"
+        class="h-screen w-9/12 fixed inset-y-0 left-0 z-40 bg-gray-100 transition-transform -translate-x-full border-e"
+      >
+        <div class="pt-8 flex justify-center">
+          <a href="index.html">
+            <img src="./img/logo.png" alt="" class="w-[70px]" />
+          </a>
+        </div>
+
+        <div class="flex h-screen flex-col justify-between">
+          <ul class="py-10">
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla active"
+                href="index.html"
+                >হোম
+              </a>
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="gallery.html"
+                >গ্যালারী</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="course-details.html"
+                >কোর্সসমূহ</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="about.html"
+                >আমাদের সর্ম্পকে</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="contact.html"
+                >যোগাযোগ করুন</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- mobile menu bar end lg:here -->
+    </header>
+    <!-- navbar part end -->
+
+    <!-- hero section start  -->
+    <section class="bg-[#f5f9f1] overflow-hidden">
+      <div class="container lg:px-14 px-6 lg:py-16 pt-7 pb-9 mx-auto">
+        <div class="items-center flex flex-col flex-col-reverse lg:flex-row">
+          <div class="w-full lg:w-1/2 mt-10 lg:mt-0">
+            <div class="lg:max-w-lg">
+              <p class="text-black text-lg font-semibold font-trio-bangla">
+                গণপ্রজাতন্ত্রী বাংলাদেশ সরকার কর্তৃক অনুমোদিত
+              </p>
+              <h1
+                class="text-3xl font-semibold text-main lg:my-6 lg:text-7xl my-3 lg:my-0 font-trio-bangla"
+              >
+                যুব উন্নয়ন
+              </h1>
+              <h5
+                class="text-green-900 lg:text-4xl md:text-3xl text-2xl font-semibold font-trio-bangla"
+              >
+                কম্পিউটার ও শর্টহ্যান্ড প্রশিক্ষণ কেন্দ্র
+              </h5>
+              <p class="mt-3 text-black lg:text-lg text-base font-trio-bangla">
+                আমাদের প্রতিষ্ঠানের পক্ষ থেকে আপনাদের সকলকে জানাই আন্তরিক
+                শুভেচ্ছা। আমরা দীর্ঘ একযুগেরও বেশি সময় ধরে তথ্য ও প্রযুক্তির
+                উন্নয়নে কাজ করে আসছি। তারই ধারাবাহিকতায়, আমাদের আঞ্চলিক শাখা
+                সমূহের মাধ্যমে তৃণমূল পর্যায়ে প্রযুক্তিতে পিছিয়ে থাকা
+                জনগোষ্ঠিকে, কম্পিউটার প্রশিক্ষণের মাধ্যমে দক্ষ জনশক্তিতে
+                রুপান্তরিত করতে আমরা নিরলসভাবে কাজ করে আসছি। আমাদের মূল লক্ষ্য
+                বেকার জনগোষ্ঠিকে প্রযুক্তিভিত্তিক আত্মনির্ভরশীল করে গড়ে তোলা এবং
+                বাংলাদেশ সরকারের ডিজিটাল বাংলাদেশকে স্মার্ট বাংলাদেশে রুপান্তর
+                করা।
+              </p>
+
+              <button
+                class="font-trio-bangla w-full px-5 py-3 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-main rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+              >
+                ছাত্র/ছাত্রীর ভর্তির আবেদন
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex items-center justify-center w-full lg:mt-0 lg:w-1/2 z-0"
+          >
+            <div class="relative group">
+              <img
+                class="w-full h-full lg:max-w-3xl rounded-xl opacity-80 transition-opacity"
+                src="https://images.adsttc.com/media/images/5541/4f5f/e58e/ce70/6c00/02c9/large_jpg/shutterstock_161192600.jpg?1430343514"
+                alt="Catalogue-pana.svg"
+              />
+              <div
+                class="absolute inset-0 bg-[#000] opacity-50 transition-opacity rounded-xl"
+              ></div>
+              <div
+                class="absolute inset-0 flex items-center justify-center text-white opacity-100 transition-opacity"
+              >
+                <div
+                  class="relative lg:w-[80px] w-[60px] lg:h-[80px] h-[60px] rounded-full cursor-pointer flex justify-center items-center"
+                >
+                  <span
+                    class="absolute top-0 right-0 left-0 bottom-0 lg:w-[80px] w-[60px] lg:h-[80px] h-[60px] mt-1 mr-2 bg-[#1b1b1b] custom-ping rounded-full"
+                  ></span>
+                  <div
+                    class="absolute lg:w-[80px] w-[60px] lg:h-[80px] h-[60px] rounded-full bg-[#1b1b1b] opacity-90 cursor-pointer flex justify-center items-center"
+                  ></div>
+                  <i
+                    class="fa-solid fa-play text-white lg:text-3xl text-2xl z-10"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- service section start  -->
+    <section class="md:py-20 py-10 font-trio-bangla">
+      <div class="container">
+        <!-- section title -->
+        <div class="text-center lg:mb-10 mb-5">
+          <h2 class="text-main lg:text-5xl md:text-3xl text-3xl font-bold">
+            আমাদের সেবাসমুহ
+          </h2>
+          <p class="text-lg text-black font-medium md:w-3/4 mx-auto mt-4">
+            সময়োপযোগী কোর্সসমূহ দিয়ে সাজানো হয়েছে আমাদের পাঠ্যসূচি, যা আপনাকে
+            বিশ্বজুড়ে কর্মক্ষম করে গড়ে তুলবে।
+          </p>
+        </div>
+        <!-- section title end  -->
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+          <!-- 1st service card -->
+          <div
+            class="src-card px-8 py-10 rounded-md bg-white text-black hover:bg-main hover:text-white duration-300 ease-in border border-neutral-100"
+          >
+            <h6 class="text-base font-semibold">জনপ্রিয় কোর্স</h6>
+            <h1 class="text-xl font-semibold my-3">গ্রাফিক ডিজাইন</h1>
+            <p class="text-base font-normal mb-3">
+              একজন দক্ষ ডিজিটাল মার্কেটার হতে হলে আপনাকে ডিজিটাল প্ল্যাটফর্মে
+              পারদর্শী হতে হবে। আর এজন্য যা কিছু জানা প্রয়োজন, তার সবই থাকছে
+              আমাদের কোর্সে।
+            </p>
+            <a href="" class="arrow-btn text-lg font-medium "
+              >কারিকুলাম
+              <span></span>
+            </a>
+          </div>
+          <!-- 2nd service card -->
+          <div
+            class="src-card px-8 py-10 rounded-md bg-white text-black hover:bg-main hover:text-white duration-300 ease-in border border-neutral-100"
+          >
+            <h6 class="text-base font-semibold">জনপ্রিয় কোর্স</h6>
+            <h1 class="text-xl font-semibold my-3">ডিজিটাল মার্কেটিং</h1>
+            <p class="text-base font-normal mb-3">
+              একজন দক্ষ ডিজিটাল মার্কেটার হতে হলে আপনাকে ডিজিটাল প্ল্যাটফর্মে
+              পারদর্শী হতে হবে। আর এজন্য যা কিছু জানা প্রয়োজন, তার সবই থাকছে
+              আমাদের কোর্সে।
+            </p>
+            <a href="" class="arrow-btn text-lg font-medium "
+              >কারিকুলাম
+              <span></span>
+            </a>
+          </div>
+          <!-- 3rd service card -->
+          <div
+            class="src-card px-8 py-10 rounded-md bg-white text-black hover:bg-main hover:text-white duration-300 ease-in border border-neutral-100"
+          >
+            <h6 class="text-base font-semibold">জনপ্রিয় কোর্স</h6>
+            <h1 class="text-xl font-semibold my-3">ওয়েব ডিজাইন</h1>
+            <p class="text-base font-normal mb-3">
+              একজন দক্ষ ডিজিটাল মার্কেটার হতে হলে আপনাকে ডিজিটাল প্ল্যাটফর্মে
+              পারদর্শী হতে হবে। আর এজন্য যা কিছু জানা প্রয়োজন, তার সবই থাকছে
+              আমাদের কোর্সে।
+            </p>
+            <a href="" class="arrow-btn text-lg font-medium "
+              >কারিকুলাম
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- service section end -->
+
+    <!-- favourite section start  -->
+    <section class="md:pb-20 py-10 relative">
+      <h2 class="hidden xl:block courses-overlay-text">TOP COURSES</h2>
+      <div class="container">
+        <!-- section title -->
+        <div class="text-center lg:mb-10 mb-5">
+          <h2
+            class="text-main lg:text-5xl md:text-3xl text-3xl font-bold font-trio-bangla"
+          >
+            আমাদের জনপ্রিয় কোর্সসমুহ
+          </h2>
+          <p
+            class="text-lg text-black font-medium px-4 md:w-3/4 mx-auto mt-4 font-trio-bangla"
+          >
+            সময়োপযোগী কোর্সসমূহ দিয়ে সাজানো হয়েছে আমাদের পাঠ্যসূচি, যা আপনাকে
+            বিশ্বজুড়ে কর্মক্ষম করে গড়ে তুলবে।
+          </p>
+        </div>
+        <!-- section title end  -->
+
+        <!-- favourite section card start  -->
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mt-10">
+          <div
+            class="w-full lg:lg:max-w-[300px] overflow-hidden bg-white rounded-lg shadow-lg relative"
+          >
+            <img
+              class="object-cover object-center w-full h-56"
+              src="./img/top_courses_thumb02.jpg"
+              alt="avatar"
+            />
+            <div class="absolute top-[20px] left-0">
+              <div
+                class="w-[100px] h-8 flex items-center px-4 bg-primary text-base font-semibold uppercase relative popular text-white"
+              >
+                Popular
+              </div>
+            </div>
+
+            <div class="px-6 pt-8 pb-5">
+              <h1 class="text-sm font-medium text-black">
+                In
+                <span class="text-main italic font-medium"
+                  >Beginner Course</span
+                >
+              </h1>
+
+              <p class="py-2 text-black font-medium text-lg text-capitalize">
+                Complete Office Application Program
+              </p>
+
+              <div
+                class="flex items-center mt-3 gap-3 text-gray-700 border-b border-border pb-4"
+              >
+                <div class="flex items-center text-sm gap-1 text-[#e4cf11]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="font-semibold">
+                  3.4 <span class="font-normal text-gray-500">(4,151)</span>
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between pt-2">
+                <p class="text-black font-semibold text-sm">
+                  By
+                  <a href="#" class="text-gray-500 hover:text-main"
+                    >Jose Portilla</a
+                  >
+                </p>
+                <h6 class="text-base font-medium text-black">$500</h6>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full lg:max-w-[300px] overflow-hidden bg-white rounded-lg shadow-lg relative"
+          >
+            <img
+              class="object-cover object-center w-full h-56"
+              src="./img/top_courses_thumb04.jpg"
+              alt="avatar"
+            />
+            <div class="absolute top-[20px] left-0">
+              <div
+                class="w-[100px] h-8 flex items-center px-4 bg-primary text-base font-semibold uppercase relative popular text-white"
+              >
+                Popular
+              </div>
+            </div>
+
+            <div class="px-6 pt-8 pb-5">
+              <h1 class="text-sm font-semibold text-black">
+                In
+                <span class="text-main italic font-semibold"
+                  >Beginner Course</span
+                >
+              </h1>
+
+              <p class="py-2 text-black font-medium text-lg text-capitalize">
+                Complete Office Application Program
+              </p>
+
+              <div
+                class="flex items-center mt-3 gap-3 text-gray-700 border-b border-border pb-4"
+              >
+                <div class="flex items-center text-sm gap-1 text-[#e4cf11]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="font-semibold">
+                  3.4 <span class="font-normal text-gray-500">(4,151)</span>
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between pt-2">
+                <p class="text-black font-semibold text-sm">
+                  By
+                  <a href="#" class="text-gray-500 hover:text-main"
+                    >Jose Portilla</a
+                  >
+                </p>
+                <h6 class="text-base font-semibold text-black">$500</h6>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full lg:max-w-[300px] overflow-hidden bg-white rounded-lg shadow-lg relative"
+          >
+            <img
+              class="object-cover object-center w-full h-56"
+              src="./img/top_courses_thumb06.jpg"
+              alt="avatar"
+            />
+            <div class="absolute top-[20px] left-0">
+              <div
+                class="w-[100px] h-8 flex items-center px-4 bg-primary text-base font-semibold uppercase relative popular text-white"
+              >
+                Popular
+              </div>
+            </div>
+
+            <div class="px-6 pt-8 pb-5">
+              <h1 class="text-sm font-medium text-black">
+                In
+                <span class="text-main italic font-medium"
+                  >Beginner Course</span
+                >
+              </h1>
+
+              <p class="py-2 text-black font-medium text-lg text-capitalize">
+                Complete Office Application Program
+              </p>
+
+              <div
+                class="flex items-center mt-3 gap-3 text-gray-700 border-b border-border pb-4"
+              >
+                <div class="flex items-center text-sm gap-1 text-[#e4cf11]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="font-semibold">
+                  3.4 <span class="font-normal text-gray-500">(4,151)</span>
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between pt-2">
+                <p class="text-black font-semibold text-sm">
+                  By
+                  <a href="#" class="text-gray-500 hover:text-main"
+                    >Jose Portilla</a
+                  >
+                </p>
+                <h6 class="text-base font-semibold text-black">$500</h6>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full lg:max-w-[300px] overflow-hidden bg-white rounded-lg shadow-lg relative"
+          >
+            <img
+              class="object-cover object-center w-full h-56"
+              src="./img/top_courses_thumb07.jpg"
+              alt="avatar"
+            />
+            <div class="absolute top-[20px] left-0">
+              <div
+                class="w-[100px] h-8 flex items-center px-4 bg-primary text-base font-semibold uppercase relative popular text-white"
+              >
+                Popular
+              </div>
+            </div>
+
+            <div class="px-6 pt-8 pb-5">
+              <h1 class="text-sm font-medium text-black">
+                In
+                <span class="text-main italic font-medium"
+                  >Beginner Course</span
+                >
+              </h1>
+
+              <p class="py-2 text-black font-medium text-lg text-capitalize">
+                Complete Office Application Program
+              </p>
+
+              <div
+                class="flex items-center mt-3 gap-3 text-gray-700 border-b border-border pb-4"
+              >
+                <div class="flex items-center text-sm gap-1 text-[#e4cf11]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="font-semibold">
+                  3.4 <span class="font-normal text-gray-500">(4,151)</span>
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between pt-2">
+                <p class="text-black font-semibold text-sm">
+                  By
+                  <a href="#" class="text-gray-500 hover:text-main"
+                    >Jose Portilla</a
+                  >
+                </p>
+                <h6 class="text-base font-semibold text-black">$500</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- favourite section card  end  -->
+      </div>
+    </section>
+    <!-- favourite section end -->
+
+    <!-- our achievement part start  -->
+    <section class="achievement text-center lg:pt-[100px] lg:pb-[110px] py-10">
+      <div class="container">
+        <h2 class="text-[26px] md:text-[36px] text-white uppercase font-bold">
+          Our <span class="text-main">Achievement</span>
+        </h2>
+
+        <!-- achievement box start here  -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:mt-[70px] mt-[50px]"
+        >
+          <!-- 1st box -->
+          <div class="box text-center">
+            <i class="fa-solid fa-graduation-cap text-5xl text-main"></i>
+            <h3 class="text-3xl md:text-4xl text-white my-4">
+              <span class="count-num">30</span>K
+            </h3>
+            <p class="text-lg text-white font-medium">Completed Students</p>
+          </div>
+
+          <!-- 2nd box -->
+          <div class="box text-center">
+            <i class="fa-solid fa-chalkboard-user text-5xl text-main"></i>
+            <h3 class="text-3xl md:text-4xl text-white my-4">
+              <span class="count-num">260</span>+
+            </h3>
+            <p class="text-lg text-white font-medium">Expert Instructor</p>
+          </div>
+
+          <!-- 3rd box -->
+          <div class="box text-center">
+            <i class="fa-solid fa-photo-film text-5xl text-main"></i>
+            <h3 class="text-3xl md:text-4xl text-white my-4">
+              <span class="count-num">580</span>+
+            </h3>
+            <p class="text-lg text-white font-medium">Tutorials in our store</p>
+          </div>
+
+          <!-- 4th box -->
+          <div class="box text-center">
+            <i class="fa-solid fa-bag-shopping text-5xl text-main"></i>
+            <h3 class="text-3xl md:text-4xl text-white my-4">
+              <span class="count-num">120</span>+
+            </h3>
+            <p class="text-lg text-white font-medium">Students get employed</p>
+          </div>
+        </div>
+        <!-- achievement box end here  -->
+      </div>
+    </section>
+    <!-- our achievement part end  -->
+
+    <!-- testimonial part start  -->
+    <section class="testimonial-bg lg:py-[100px] md:lg:py-[80px] py-[50px]">
+      <div class="container">
+        <!-- section title -->
+        <div class="text-center lg:mb-10 mb-5">
+          <h2
+            class="text-main lg:text-5xl md:text-3xl text-2xl font-bold font-trio-bangla"
+          >
+            সফল ছাত্র/ছাত্রী
+          </h2>
+          <p
+            class="text-lg text-black font-medium w-3/4 mx-auto mt-4 font-trio-bangla"
+          >
+            সময়োপযোগী কোর্সসমূহ দিয়ে সাজানো হয়েছে আমাদের পাঠ্যসূচি, যা আপনাকে
+            বিশ্বজুড়ে কর্মক্ষম করে গড়ে তুলবে।
+          </p>
+        </div>
+        <!-- section title end  -->
+
+        <!-- testimonial slider part start here  -->
+        <div class="">
+          <!-- testimonial card start  -->
+
+          <div class="testimonial-active slick-slider overflow-x-hidden">
+            <div class="testimonial-item">
+              <div class="testimonial-quote">
+                <svg
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 32 32"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <polygon points="0,4 0,28 12,16 12,4"></polygon>
+                    <polygon points="20,4 20,28 32,16 32,4"></polygon>
+                  </g>
+                </svg>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="testi-content">
+                <p>
+                  A foodbank is a non-profit tha charitable organization that
+                  distributes food those who have difficulty purchasing enough
+                  to avoid hunger.
+                </p>
+                <div class="testi-avatar-wrap">
+                  <div class="testi-avatar-img">
+                    <img src="./img/testi_avatar01.png" alt="" />
+                  </div>
+                  <div class="testi-avatar-info">
+                    <h6>Roshan Nikkum.</h6>
+                    <span>Public Relation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <div class="testimonial-quote">
+                <svg
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 32 32"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <polygon points="0,4 0,28 12,16 12,4"></polygon>
+                    <polygon points="20,4 20,28 32,16 32,4"></polygon>
+                  </g>
+                </svg>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="testi-content">
+                <p>
+                  A foodbank is a non-profit tha charitable organization that
+                  distributes food those who have difficulty purchasing enough
+                  to avoid hunger.
+                </p>
+                <div class="testi-avatar-wrap">
+                  <div class="testi-avatar-img">
+                    <img src="./img/testi_avatar01.png" alt="" />
+                  </div>
+                  <div class="testi-avatar-info">
+                    <h6>Roshan Nikkum.</h6>
+                    <span>Public Relation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <div class="testimonial-quote">
+                <svg
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 32 32"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <polygon points="0,4 0,28 12,16 12,4"></polygon>
+                    <polygon points="20,4 20,28 32,16 32,4"></polygon>
+                  </g>
+                </svg>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="testi-content">
+                <p>
+                  A foodbank is a non-profit tha charitable organization that
+                  distributes food those who have difficulty purchasing enough
+                  to avoid hunger.
+                </p>
+                <div class="testi-avatar-wrap">
+                  <div class="testi-avatar-img">
+                    <img src="./img/testi_avatar01.png" alt="" />
+                  </div>
+                  <div class="testi-avatar-info">
+                    <h6>Roshan Nikkum.</h6>
+                    <span>Public Relation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <div class="testimonial-quote">
+                <svg
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 32 32"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <polygon points="0,4 0,28 12,16 12,4"></polygon>
+                    <polygon points="20,4 20,28 32,16 32,4"></polygon>
+                  </g>
+                </svg>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="testi-content">
+                <p>
+                  A foodbank is a non-profit tha charitable organization that
+                  distributes food those who have difficulty purchasing enough
+                  to avoid hunger.
+                </p>
+                <div class="testi-avatar-wrap">
+                  <div class="testi-avatar-img">
+                    <img src="./img/testi_avatar01.png" alt="" />
+                  </div>
+                  <div class="testi-avatar-info">
+                    <h6>Roshan Nikkum.</h6>
+                    <span>Public Relation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <div class="testimonial-quote">
+                <svg
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 32 32"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <polygon points="0,4 0,28 12,16 12,4"></polygon>
+                    <polygon points="20,4 20,28 32,16 32,4"></polygon>
+                  </g>
+                </svg>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="testi-content">
+                <p>
+                  A foodbank is a non-profit tha charitable organization that
+                  distributes food those who have difficulty purchasing enough
+                  to avoid hunger.
+                </p>
+                <div class="testi-avatar-wrap">
+                  <div class="testi-avatar-img">
+                    <img src="./img/testi_avatar01.png" alt="" />
+                  </div>
+                  <div class="testi-avatar-info">
+                    <h6>Roshan Nikkum.</h6>
+                    <span>Public Relation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- testimonial card end -->
+        </div>
+        <!-- testimonial slider part end here  -->
+      </div>
+    </section>
+
+    <!-- testimonial part end -->
+
+    <!-- user regestration part start  -->
+    <div
+      class="my-10 flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg lg:max-w-7xl"
+    >
+      <div
+        class="hidden bg-cover lg:block lg:w-1/2"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1606660265514-358ebbadc80d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1575&q=80');
+        "
+      ></div>
+
+      <div class="w-full px-6 py-8 md:px-8 lg:w-1/2">
+        <h2 class="text-2xl font-semibold font-trio-bangla text-main">
+          আপনার প্রোফাইল তৈরি করুন
+        </h2>
+
+        <div class="mt-4">
+          <label
+            class="block mb-2 text-base font-semibold text-black"
+            for="LoggingEmailAddress"
+            >নাম</label
+          >
+          <input
+            placeholder="Name"
+            id="LoggingEmailAddress"
+            class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg focus:outline-main"
+            type="email"
+          />
+        </div>
+
+        <div class="mt-4">
+          <label
+            class="block mb-2 text-base font-semibold text-black"
+            for="email"
+            >ইমেইল</label
+          >
+
+          <input
+            id="email"
+            placeholder="Email"
+            class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg focus:outline-main"
+            type="email"
+          />
+        </div>
+        <div class="mt-4">
+          <label
+            class="block mb-2 text-base font-semibold text-black"
+            for="phone"
+            >ফোন নাম্বার</label
+          >
+
+          <input
+            id="phone"
+            placeholder="Phone Number"
+            class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg focus:outline-main"
+            type="number"
+          />
+        </div>
+        <div class="mt-4">
+          <label
+            class="block mb-2 text-base font-semibold text-black"
+            for="loggingPassword"
+            >পাসওয়ার্ড</label
+          >
+
+          <input
+            id="loggingPassword"
+            placeholder="password"
+            class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg focus:outline-main"
+            type="password"
+          />
+        </div>
+
+        <div class="mt-6">
+          <button
+            class="w-full md:w-fit inline-block px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-main rounded-lg hover:bg-primary hover:text-white focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50"
+          >
+            সাবমিট করুন
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- user regestration part end -->
+
+    <!-- footer section start  -->
+    <footer class="bg-[#242424] lg:py-[70px] md:py-10 py-8">
+      <div class="container">
+        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-6">
+          <!-- 1st column -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-white text-xl font-medium">About Us</h2>
+            </div>
+            <div class="font-trio-bangla text-white">
+              <p class="text-sm">
+                গণপ্রজাতন্ত্রী বাংলাদেশ সরকার কর্তৃক অনুমোদিত
+              </p>
+              <h5 class="text-lg mt-3">যুব উন্নয়ন</h5>
+              <h3 class="text-lg">কম্পিউটার ও শর্টহ্যান্ড প্রশিক্ষণ কেন্দ্র</h3>
+
+              <!-- social icons -->
+              <ul
+                class="flex items-center social-icons gap-3 justify-start mt-4"
+              >
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 2nd column  -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-white text-xl font-medium">Quick Links</h2>
+            </div>
+            <div>
+              <ul class="quick-links">
+                <li>
+                  <a href="#"> home </a>
+                </li>
+                <li>
+                  <a href="#"> About Us </a>
+                </li>
+                <li>
+                  <a href="#"> Gallery </a>
+                </li>
+                <li>
+                  <a href="#"> Portfoilo </a>
+                </li>
+                <li>
+                  <a href="#"> Blog </a>
+                </li>
+                <li>
+                  <a href="#"> Contact Us </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 3rd column  -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-white text-xl font-medium">Popular Courses</h2>
+            </div>
+
+            <div class="footer-courses">
+              <ul>
+                <li>
+                  <div class="f-courses-thumb">
+                    <a href="#"
+                      ><img src="./img/f_courses_thumb01.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="f-courses-content">
+                    <h5>
+                      <a href="#"
+                        >Access 2016 Essential Training Training Examples</a
+                      >
+                    </h5>
+                    <span>Tonoy Pueyo</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="f-courses-thumb">
+                    <a href="#"
+                      ><img src="./img/f_courses_thumb02.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="f-courses-content">
+                    <h5>
+                      <a href="#"
+                        >Access 2016 Essential Training Training Examples</a
+                      >
+                    </h5>
+                    <span>Tonoy Pueyo</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 4th column  -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-white text-xl font-medium">Twitter Feed</h2>
+            </div>
+
+            <div class="fw-tweet-post">
+              <ul>
+                <li>
+                  <i class="fab fa-twitter"></i>
+                  <div class="fw-tweet-post-content">
+                    <p>
+                      Here comes <a href="#">https://t.ew/ARkjsdsd</a> This
+                      stellar #theme is made for any type of
+                    </p>
+                    <span>3 months ago</span>
+                  </div>
+                </li>
+                <li>
+                  <i class="fab fa-twitter"></i>
+                  <div class="fw-tweet-post-content">
+                    <p>
+                      Here comes <a href="#">https://t.ew/ARkjsdsd</a> This
+                      stellar #theme is made for any type of modern…
+                      <a href="#">https://t.ew/ARkjsdsd</a>
+                    </p>
+                    <span>3 months ago</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright-area bg-[#1b1b1b] py-7 text-white">
+      <div class="flex justify-center">
+        <div class="copyright-text">
+          <p>COPYRIGHT © 2024. ALL RIGHTS RESERVED CLASIC IT.</p>
+        </div>
+      </div>
+    </div>
+    <!-- footer section end -->
+
+    <!-- login modal open and close start -->
+
+    <!-- Overlay -->
+    <div id="login-overlay" class="login-overlay">
+      <div class="overlay-content lg:w-2/4 xl:w-1/4 md:w-3/4 w-[90%]">
+        <div
+          class="flex items-center justify-between pt-2 pb-3 border-b border-border"
+        >
+          <h2 class="text-xl text-black font-medium">Login</h2>
+          <button id="closeOverlayBtn">
+            <i
+              class="fa-solid fa-xmark text-xl text-black hover:text-gray-500"
+            ></i>
+          </button>
+        </div>
+        <div class="pt-4">
+          <label for="email" class="block mb-2">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Adress..."
+            class="w-full px-4 py-2 outline-none border font-open-sans font-normal border-border rounded-md  focus:border-main"
+          />
+        </div>
+        <div class="pt-4">
+          <label for="password" class="block mb-2">Password</label>
+          <input
+            type="password"
+            name="email"
+            id="email"
+            placeholder="Password"
+            class="w-full px-4 py-2 outline-none border border-border rounded-md font-normal font-open-sans focus:border-main"
+          />
+        </div>
+        <div class="mt-4 pb-4 flex items-center justify-between">
+          <div>
+            <a href="#" class="hover:underline hover:text-blue-700"
+              ><i class="fas fa-key"></i>
+              Forgot Password
+            </a>
+          </div>
+          <button
+            type="submit"
+            class="px-7 py-2 bg-main text-white text-lg capitalize rounded-md font-medium"
+          >
+            submit
+          </button>
+        </div>
+
+        <div
+          class="pt-4 border-t border-border flex items-center gap-7 justify-end"
+        >
+          <a
+            href="admin-login.html"
+            class="text-sm font-open-sans font-semibold hover:text-blue-700 hover:underline"
+            ><i class="fas fa-user mr-2"></i>Admin Login</a
+          >
+          <a
+            href="user-login.html"
+            class="text-sm font-open-sans font-semibold hover:text-blue-700 hover:underline"
+            ><i class="fas fa-users mr-1"></i>Student/Parent Login</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- login modal open and close end -->
+
+    <!-- scroll up button start  -->
+    <button
+      id="scrollToTopBtn"
+      class="scroll-top scroll-to-target"
+      data-target="html"
+    >
+      <i class="fas fa-angle-up"></i>
+    </button>
+    <!-- scroll up button end -->
+
+
+    <!-- arrow button class  -->
+    <!-- <div class="container">
+      <a href="" class="arrow-btn"
+        >read more
+        <span></span>
+      </a>
+    </div> -->
+
+    <!-- slick slider js link  -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script src="./js/waypoint.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+
+    <script src="./js/jquery.rcounter.js"></script>
+    <script src="./tailwind.config.js"></script>
+    <!-- main js file -->
+    <script src="./js/app.js"></script>
+
+    <script>
+      // mobile menu show and hide
+      document.addEventListener("DOMContentLoaded", function () {
+        var mobileMenu = document.getElementById("mobileMenu");
+        var toggleMobileMenu = document.getElementById("toggleMobileMenu");
+        var menuIcon = document.getElementById("menuIcon");
+
+        toggleMobileMenu.addEventListener("click", function () {
+          mobileMenu.classList.toggle("-translate-x-full");
+
+          if (mobileMenu.classList.contains("-translate-x-full")) {
+            menuIcon.className = "fas fa-bars";
+          } else {
+            menuIcon.className = "fas fa-xmark";
+          }
+        });
+      });
+
+      // login modal open JS
+      document.addEventListener("DOMContentLoaded", function () {
+        const overlay = document.getElementById("login-overlay");
+        const overlay2 = document.getElementById("login-overlay");
+        const openOverlayBtn = document.getElementById("openOverlayBtn");
+        const closeOverlayBtn = document.getElementById("closeOverlayBtn");
+
+        openOverlayBtn.addEventListener("click", function () {
+          overlay.style.display = "flex";
+          document.body.classList.add("no-scroll");
+          console.log("click ne");
+        });
+        openOverlayBtn2.addEventListener("click", function () {
+          overlay.style.display = "flex";
+          document.body.classList.add("no-scroll");
+          console.log("click ne");
+        });
+
+        closeOverlayBtn.addEventListener("click", function () {
+          overlay.style.display = "none";
+          document.body.classList.remove("no-scroll");
+        });
+      });
+
+      // counter function
+      $(".count-num").rCounter({
+        duration: 30,
+      });
+    </script>
+  </body>
+</html>

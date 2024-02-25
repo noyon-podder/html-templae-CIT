@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <!--   awesome link  -->
+        <link rel="stylesheet" href="./css/all.min.css" />
+    
+        <!-- font bangla  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap"
+          rel="stylesheet"
+        />
+    
+        <!-- tailwind connect with CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+    
+        <!-- slick slider link -->
+        <link rel="stylesheet" href="./css/slick.css" />
+        <link rel="stylesheet" href="./css/slick-theme.css" />
+    
+        <link rel="stylesheet" href="./css/style.css" />
+    
+        <title>Educational Website || Event Details</title>
+      </head>
+<body>
+    <!-- top header part start -->
+    <div>
+        <div class="border-b-2 border-main">
+          <div class="md:container">
+            <div class="flex items-center">
+              <div class="px-4 bg-main py-1">
+                <h2
+                  class="text-white lg:text-xl text-lg font-normal font-trio-bangla"
+                >
+                  নোটিশ
+                </h2>
+              </div>
+              <marquee
+                behavior="scroll"
+                direction="left"
+                onmouseover="this.stop()"
+                onmouseout="this.start()"
+                class="text-base text-black font-semibold"
+                >ভর্তি বিজ্ঞপ্তিঃ আমাদের সকল আঞ্চলিক শাখায় তিন ও ছয় মাস মেয়াদী
+                অফিস এ্যাপ্লিকেশন কোর্সে জুনয়ারি - জুন এবং জুনয়ারি - মার্চ ২০২৪
+                সেশনে ভর্তি চলছে ।বিঃ দ্রঃ ভর্তি প্রক্রিয়া অনলান।
+              </marquee>
+            </div>
+          </div>
+        </div>
+        <!-- follow us div -->
+        <div class="bg-main text-white mt-[2px]">
+          <div class="container">
+            <div
+              class="flex items-center lg:justify-between lg:flex-row flex-col gap-2 w-full py-1"
+            >
+              <p class="flex items-center gap-x-2 font-open-sans">
+                <i class="fa-regular fa-envelope"></i>
+                <span class="font-medium text-base">fake@gmail.com</span>
+              </p>
+              <div class="flex items-center gap-x-4 font-open-sans">
+                <span class="text-base font-semibold">Follow Us: </span>
+                <ul class="flex items-center gap-x-4">
+                  <li>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- top header part end -->
+  
+      <!-- navbar part start  -->
+      <header
+        id="header"
+        class="bg-white border-b border-border lg:drop-shadow-xl py-1 duration-300 ease-in"
+      >
+        <div class="container">
+          <nav class="flex justify-between items-center bg-white">
+            <div>
+              <a href="index.html">
+                <img
+                  src="./img/logo.png"
+                  alt=""
+                  class="lg:w-[70px] md:w-[65px] w-[60px] w-[60px] logo"
+                />
+              </a>
+            </div>
+            <div class="hidden lg:block">
+              <div class="navbar-wrap">
+                <ul
+                  class="flex md:flex-row flex-col md:items-center xl:gap-2 z-50 bg-white w-full z-50 bg-white py-10 lg:py-0 pl-3 lg:pl-0"
+                >
+                  <li class="active">
+                    <a class="nav-link text-clip lg:text-sm xl:text-lg lg:text-sm" href="index.html">Home </a>
+                  </li>
+                  <li>
+                    <a class="nav-link text-clip lg:text-sm xl:text-lg" href="gallery.html">Gallery</a>
+                  </li>
+                  <li>
+                    <a class="nav-link text-clip lg:text-sm xl:text-lg" href="course.html">Courses</a>
+                  </li>
+                  <li>
+                    <a class="nav-link text-clip lg:text-sm xl:text-lg" href="about.html">About Us</a>
+                  </li>
+                  <li>
+                    <a class="nav-link text-clip lg:text-sm xl:text-lg" href="contact.html">Contact Us</a>
+                  </li>
+                  <li>
+                    <a class="nav-link text-clip lg:text-sm xl:text-lg" href="event.html">Event</a>
+                  </li>
+                  <li>
+                    <a class="nav-link text-clip lg:text-sm xl:text-lg" href="news.html">News</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+  
+            <div class="lg:flex hidden items-center gap-5 ">
+              <button
+                    id="openOverlayBtn"
+                    class="px-5 py-2 bg-main text-white rounded-sm text-[18px] hover:bg-primary duration-300"
+                  >
+                    Login
+                  </button>
+  
+                  <a href="cart.html" class="w-[45px] h-[45px] leading-[45px]  duration-300 hover:bg-main hover:text-white border border-main rounded-full text-main flex items-center justify-center text-base relative">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                  
+                    <span class="w-[22px] h-[22px] bg-black text-white rounded-full leading-[22px] text-center font-open-sans text-[12px] absolute -top-[6px] left-[27px]">0</span>
+                  </a>
+            </div>
+  
+  
+            <!-- mobile menu show -->
+            <div class="flex items-center gap-6 lg:hidden">
+              <button
+                id="openOverlayBtn2"
+                class="px-5 py-2 bg-main text-white rounded-sm text-base hover:bg-primary duration-300"
+              >
+                Login
+              </button>
+  
+              <a href="cart.html" class="w-[45px] h-[45px] leading-[45px]  duration-300 hover:bg-main hover:text-white border border-main rounded-full text-main flex items-center justify-center text-base relative">
+                <i class="fa-solid fa-bag-shopping"></i>
+              
+                <span class="w-[22px] h-[22px] bg-black text-white rounded-full leading-[22px] text-center font-open-sans text-[12px] absolute -top-[6px] left-[27px]">0</span>
+              </a>
+              <button id="toggleMobileMenu">
+                <div class="text-3xl text-bgray-900">
+                  <span id="menuIcon" class="fa-solid fa-bars text-black"></span>
+                </div>
+              </button>
+            </div>
+          </nav>
+        </div>
+  
+        <!-- mobile menu bar start  -->
+        <div
+          id="mobileMenu"
+          class="h-screen w-9/12 fixed inset-y-0 left-0 z-40 bg-gray-100 transition-transform -translate-x-full border-e"
+        >
+          <div class="pt-8 flex justify-center">
+            <a href="index.html">
+              <img src="./img/logo.png" alt="" class="w-[70px]" />
+            </a>
+          </div>
+  
+          <div class="flex h-screen flex-col justify-between">
+            <ul class="py-10">
+              <li class="py-3 px-6 border-b border-[#eaeaea]">
+                <a
+                  class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla active"
+                  href="index.html"
+                  >হোম
+                </a>
+              </li>
+              <li class="py-3 px-6 border-b border-[#eaeaea]">
+                <a
+                  class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                  href="gallery.html"
+                  >গ্যালারী</a
+                >
+              </li>
+              <li class="py-3 px-6 border-b border-[#eaeaea]">
+                <a
+                  class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                  href="course-details.html"
+                  >কোর্সসমূহ</a
+                >
+              </li>
+              <li class="py-3 px-6 border-b border-[#eaeaea]">
+                <a
+                  class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                  href="about.html"
+                  >আমাদের সর্ম্পকে</a
+                >
+              </li>
+              <li class="py-3 px-6 border-b border-[#eaeaea]">
+                <a
+                  class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                  href="contact.html"
+                  >যোগাযোগ করুন</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- mobile menu bar end lg:here -->
+      </header>
+      <!-- navbar part end -->
+
+    <!-- event details part start here  -->
+    <section class="container pt-5 lg:pt-10 lg:pb-20 pb-10">
+        <div class="grid lg:grid-cols-10 gap-8">
+            <div class="lg:col-span-6 ">
+                <div class="event-wrapper">
+                    <div class="lg:h-[500px] md:h-[400px] h-[300px]">
+                        <img src="./img/about/breadcrumb_bg02.jpg" alt="" class="w-full h-full object-cover rounded-md">
+                    </div>
+
+                    <div class="event-content mt-7">
+                        <h2 class="text-3xl  font-medium text-main">CONVOCATION FOR GRADUTE STUDENTS</h2>
+                        <div class="flex items-center gap-5 pt-4 pb-5 border-b border-border">
+                            <div class="flex items-center gap-2 text-gray-500">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>14 Nov, 2015</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-gray-500">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>10:00 am - 4:00 pm</span>
+                            </div>
+                        </div>
+
+                        <p class="font-open-sans py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit iusto a aperiam accusantium laborum molestiae porro exercitationem atque doloribus, eius fugiat odio similique error itaque omnis quam? Odio voluptatum doloremque praesentium quibusdam impedit quia, non labore expedita quisquam sint possimus illum aliquam in eum sequi itaque obcaecati corrupti architecto laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eligendi quibusdam corrupti debitis repudiandae dolores vero impedit? Quasi in veritatis qui modi nemo minus totam, voluptatem voluptate ut,
+                        
+                        <br> 
+                        <br>   perferendis cupiditate atque quia fuga consequatur porro officia id similique distinctio libero culpa eaque? Aperiam voluptate molestiae recusandae optio laudantium repellendus magni dolore iste impedit! Sint, nam. Reprehenderit, libero iure.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-4 px-5 py-8 bg-neutral-100">
+                <h2 class="text-2xl font-medium text-gray-900">Recent Posts</h2>
+
+                <div class="mt-7">
+                    <div class="flex  gap-4">
+                        <div class="min-w-[130px] w-1/3 ">
+                            <img src="./img/gallery/2.jpg" alt="" class="w-full h-full object-cover rounded-md">
+                        </div>
+                        <div class=" ">
+                            <p class="font-open-sans font-semibold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quibusdam vero magni vel, tempora a quo.</p>
+                            <div class="flex items-center gap-2 text-gray-500 mt-4">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>14 Nov, 2015</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex  gap-4 mt-6">
+                        <div class="min-w-[130px] w-1/3 ">
+                            <img src="./img/gallery/2.jpg" alt="" class="w-full h-full object-cover rounded-md">
+                        </div>
+                        <div class=" ">
+                            <p class="font-open-sans font-semibold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quibusdam vero magni vel, tempora a quo.</p>
+                            <div class="flex items-center gap-2 text-gray-500 mt-4">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>14 Nov, 2015</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- event details part end here  -->
+
+
+
+    <script src="./tailwind.config.js"></script>
+</body>
+</html>

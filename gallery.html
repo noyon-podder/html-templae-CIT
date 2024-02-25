@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <!--   awesome link  -->
+        <link rel="stylesheet" href="./css/all.min.css" />
+    
+        <!-- font bangla  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap"
+          rel="stylesheet"
+        />
+    
+        <!-- tailwind connect with CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="./tailwind.config.js"></script>
+    
+        <!-- slick slider link -->
+        <link rel="stylesheet" href="./css/slick.css" />
+        <link rel="stylesheet" href="./css/slick-theme.css" />
+    
+        <link rel="stylesheet" href="./css/style.css" />
+    
+        <title>Educational Website || Gallery</title>
+      </head>
+<body>
+
+  
+    <!-- top header part start -->
+    <div>
+      <div class="border-b-2 border-main">
+        <div class="md:container">
+          <div class="flex items-center">
+            <div class="px-4 bg-main py-1">
+              <h2
+                class="text-white lg:text-xl text-lg font-normal font-trio-bangla"
+              >
+                নোটিশ
+              </h2>
+            </div>
+            <marquee
+              behavior="scroll"
+              direction="left"
+              onmouseover="this.stop()"
+              onmouseout="this.start()"
+              class="text-base text-black font-semibold"
+              >ভর্তি বিজ্ঞপ্তিঃ আমাদের সকল আঞ্চলিক শাখায় তিন ও ছয় মাস মেয়াদী
+              অফিস এ্যাপ্লিকেশন কোর্সে জুনয়ারি - জুন এবং জুনয়ারি - মার্চ ২০২৪
+              সেশনে ভর্তি চলছে ।বিঃ দ্রঃ ভর্তি প্রক্রিয়া অনলান।
+            </marquee>
+          </div>
+        </div>
+      </div>
+      <!-- follow us div -->
+      <div class="bg-main text-white mt-[2px]">
+        <div class="container">
+          <div
+            class="flex items-center lg:justify-between lg:flex-row flex-col gap-2 w-full py-1"
+          >
+            <p class="flex items-center gap-x-2 font-open-sans">
+              <i class="fa-regular fa-envelope"></i>
+              <span class="font-medium text-base">fake@gmail.com</span>
+            </p>
+            <div class="flex items-center gap-x-4 font-open-sans">
+              <span class="text-base font-semibold">Follow Us: </span>
+              <ul class="flex items-center gap-x-4">
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- top header part end -->
+
+    <!-- navbar part start  -->
+    <header
+      id="header"
+      class="bg-white border-b border-border lg:drop-shadow-xl py-1 duration-300 ease-in"
+    >
+      <div class="container">
+        <nav class="flex justify-between items-center bg-white">
+          <div>
+            <a href="index.html">
+              <img
+                src="./img/logo.png"
+                alt=""
+                class="lg:w-[70px] md:w-[65px] w-[60px] w-[60px] logo"
+              />
+            </a>
+          </div>
+          <div class="hidden lg:block">
+            <div class="navbar-wrap">
+              <ul
+                class="flex md:flex-row flex-col md:items-center xl:gap-2 z-50 bg-white w-full z-50 bg-white py-10 lg:py-0 pl-3 lg:pl-0"
+              >
+                <li class="active">
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg lg:text-sm" href="index.html">Home </a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="course.html">Courses</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="contact.html">Contact Us</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="event.html">Event</a>
+                </li>
+                <li>
+                  <a class="nav-link text-clip lg:text-sm xl:text-lg" href="news.html">News</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <div class="lg:flex hidden items-center gap-5 ">
+            <button
+                  id="openOverlayBtn"
+                  class="px-5 py-2 bg-main text-white rounded-sm text-[18px] hover:bg-primary duration-300"
+                >
+                  Login
+                </button>
+
+                <a href="cart.html" class="w-[45px] h-[45px] leading-[45px]  duration-300 hover:bg-main hover:text-white border border-main rounded-full text-main flex items-center justify-center text-base relative">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                
+                  <span class="w-[22px] h-[22px] bg-black text-white rounded-full leading-[22px] text-center font-open-sans text-[12px] absolute -top-[6px] left-[27px]">0</span>
+                </a>
+          </div>
+
+
+          <!-- mobile menu show -->
+          <div class="flex items-center gap-6 lg:hidden">
+            <button
+              id="openOverlayBtn2"
+              class="px-5 py-2 bg-main text-white rounded-sm text-base hover:bg-primary duration-300"
+            >
+              Login
+            </button>
+
+            <a href="cart.html" class="w-[45px] h-[45px] leading-[45px]  duration-300 hover:bg-main hover:text-white border border-main rounded-full text-main flex items-center justify-center text-base relative">
+              <i class="fa-solid fa-bag-shopping"></i>
+            
+              <span class="w-[22px] h-[22px] bg-black text-white rounded-full leading-[22px] text-center font-open-sans text-[12px] absolute -top-[6px] left-[27px]">0</span>
+            </a>
+            <button id="toggleMobileMenu">
+              <div class="text-3xl text-bgray-900">
+                <span id="menuIcon" class="fa-solid fa-bars text-black"></span>
+              </div>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <!-- mobile menu bar start  -->
+      <div
+        id="mobileMenu"
+        class="h-screen w-9/12 fixed inset-y-0 left-0 z-40 bg-gray-100 transition-transform -translate-x-full border-e"
+      >
+        <div class="pt-8 flex justify-center">
+          <a href="index.html">
+            <img src="./img/logo.png" alt="" class="w-[70px]" />
+          </a>
+        </div>
+
+        <div class="flex h-screen flex-col justify-between">
+          <ul class="py-10">
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla active"
+                href="index.html"
+                >হোম
+              </a>
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="gallery.html"
+                >গ্যালারী</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="course-details.html"
+                >কোর্সসমূহ</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="about.html"
+                >আমাদের সর্ম্পকে</a
+              >
+            </li>
+            <li class="py-3 px-6 border-b border-[#eaeaea]">
+              <a
+                class="hover:text-main nav-link hover:font-semibold text-xl font-trio-bangla"
+                href="contact.html"
+                >যোগাযোগ করুন</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- mobile menu bar end lg:here -->
+    </header>
+    <!-- navbar part end -->
+
+
+    <!-- gallery banner part start  -->
+    <section
+      class="bg-[url('./img/about/breadcrumb_bg02.jpg')] bg-cover  md:h-[250px] h-[200px] bg-top-center bg-no-repeat relative"
+    >
+      <!-- Black overlay -->
+      <div class="absolute inset-0 bg-[#000] opacity-50 z-10"></div>
+      <div
+        class="flex flex-col gap-10 items-center justify-center w-full h-full z-50 relative"
+      >
+        <h2 class="text-white text-3xl lg:text-6xl font-semibold uppercase">
+          LEARN MORE our gallery
+        </h2>
+        <!-- breadcrumbs -->
+        <ul class="flex text-white">
+          <li>
+            <a href="#" class="capitalize text-white text-[20px] font-normal pl-6 pr-6"
+              >Home</a
+            >
+          </li>
+          <li
+            class="capitalize text-[20px] font-normal pl-6 pr-6 relative breadcrumb-list active"
+          >
+            gallery
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- gallery banner part end  -->
+
+    <!-- gallery section start -->
+      <section class="md:py-20 py-10 bg-[#eaeaea]">
+        <div class="container">
+          <!-- section title -->
+        <div class="text-center lg:mb-10 mb-5">
+          <h2 class="text-main lg:text-5xl md:text-3xl text-3xl font-bold">
+            আমাদের গ্যালারী
+          </h2>
+          <p class="text-lg text-black font-medium md:w-3/4 mx-auto mt-4">
+            সময়োপযোগী কোর্সসমূহ দিয়ে সাজানো হয়েছে আমাদের পাঠ্যসূচি, যা আপনাকে
+            বিশ্বজুড়ে কর্মক্ষম করে গড়ে তুলবে।
+          </p>
+        </div>
+        <!-- section title end  -->
+
+
+        <!-- gallery image container section start  -->
+        <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10"> -->
+        <div class="gallery-slider">
+          <div class="team-box  overflow-hidden text-center">
+            <div class="team-thumb relative">
+                <img src="./img/gallery/1.jpg" alt="">
+                <div class="absolute inset-0 bg-[#000] opacity-30 z-10"></div>
+                <div class="team-social">
+                  <h2 class="z-20">Festival Day</h2>
+                </div>
+            </div>
+            
+        </div>
+          <div class="team-box  overflow-hidden text-center">
+            <div class="team-thumb relative">
+                <img src="./img/gallery/2.jpg" alt="">
+                <div class="absolute inset-0 bg-[#000] opacity-30 z-10"></div>
+                <div class="team-social">
+                  <h2 class="z-20">Annual Function</h2>
+                </div>
+            </div>
+            
+        </div>
+          <div class="team-box  overflow-hidden text-center">
+            <div class="team-thumb relative">
+                <img src="./img/gallery/3.jpg" alt="">
+                <div class="absolute inset-0 bg-[#000] opacity-30 z-10"></div>
+                <div class="team-social">
+                  <h2 class="z-20">Group Meeting</h2>
+                </div>
+            </div>
+            
+        </div>
+          <div class="team-box  overflow-hidden text-center">
+            <div class="team-thumb relative">
+                <img src="./img/gallery/4.jpg" alt="">
+                <div class="absolute inset-0 bg-[#000] opacity-30 z-10"></div>
+                <div class="team-social">
+                  <h2 class="z-20">Festival Day</h2>
+                </div>
+            </div>
+           
+        </div>
+          <div class="team-box  overflow-hidden text-center">
+            <div class="team-thumb relative">
+                <img src="./img/gallery/6.jpg" alt="">
+                <div class="absolute inset-0 bg-[#000] opacity-30 z-10"></div>
+                <div class="team-social">
+                  <h2 class="z-20">Festival Day</h2>
+                </div>
+            </div>
+           
+        </div>
+          <div class="team-box  overflow-hidden text-center">
+            <div class="team-thumb relative">
+                <img src="./img/gallery/5.jpg" alt="">
+                <div class="absolute inset-0 bg-[#000] opacity-30 z-10"></div>
+                <div class="team-social">
+                  <h2 class="z-20">Festival Day</h2>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- gallery image container section end -->
+        </div>
+      </section>
+    <!-- gallery section end -->
+
+
+    <!-- video section start  -->
+    <section class="md:py-20 py-10">
+      
+        <!-- section title -->
+        <div class="text-center lg:mb-10 mb-5">
+          <h2 class="text-main lg:text-5xl md:text-3xl text-3xl font-bold">
+            আমাদের ভিডিও
+          </h2>
+          <p class="text-lg text-black font-medium md:w-3/4 mx-auto mt-4">
+            সময়োপযোগী কোর্সসমূহ দিয়ে সাজানো হয়েছে আমাদের পাঠ্যসূচি, যা আপনাকে
+            বিশ্বজুড়ে কর্মক্ষম করে গড়ে তুলবে।
+          </p>
+        </div>
+        <!-- section title end  -->
+      </div>
+
+      <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div class="relative  max-h-[300px]  video-wrapper">
+          <img src="./img/gallery/5.jpg" class="rounded-[12px]" alt="">
+          <div class="bg-[#000] absolute inset-0 rounded-[12px] opacity-50"></div>
+          <span id="openVideoBtn" class="w-[50px] h-[50px] bg-main rounded-full text-white inline-block flex items-center justify-center  cursor-pointer vid-play-icon hover:bg-primary hover:text-white duration-300">
+            <i class="fas fa-play text-[24px]"></i>
+          </span>
+        </div>
+
+        <div class="relative  max-h-[300px]  video-wrapper">
+          <img src="./img/gallery/6.jpg" class="rounded-[12px]" alt="">
+          <div class="bg-[#000] absolute inset-0 rounded-[12px] opacity-50"></div>
+          <span class="w-[50px] h-[50px] bg-main rounded-full text-white inline-block flex items-center justify-center  cursor-pointer vid-play-icon hover:bg-primary hover:text-white duration-300">
+            <i class="fas fa-play text-[24px]"></i>
+          </span>
+        </div>
+
+        <div class="relative  max-h-[300px]  video-wrapper">
+          <img src="./img/gallery/4.jpg" class="rounded-[12px]" alt="">
+          <div class="bg-[#000] absolute inset-0 rounded-[12px] opacity-50"></div>
+          <span class="w-[50px] h-[50px] bg-main rounded-full text-white inline-block flex items-center justify-center  cursor-pointer vid-play-icon hover:bg-primary hover:text-white duration-300">
+            <i class="fas fa-play text-[24px]"></i>
+          </span>
+        </div>
+
+
+
+      </div>
+    </section>
+    <!-- video section end -->
+
+    <!-- Modal -->
+<div id="videoModal" class="hidden fixed w-full h-full top-0 left-0 flex items-center justify-center">
+  <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-80"></div>
+  
+  
+
+
+      <div class="md:w-[80%] w-[90%] lg:h-[435px] md:h-[380px] h-[250px] lg:w-2/4  mx-auto z-50 rounded-lg relative">
+        <span id="closeVideoBtn" class="text-3xl text-red-600 cursor-pointer absolute -top-[20px] right-0 z-50 w-[35px] h-[35px] bg-white rounded-full flex items-center justify-center">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/V4mjnYWEIZE?si=7y2uwseFkYRw9-eq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+       
+      </div>
+      
+    </div>
+
+    
+  </div>
+</div>
+
+
+
+    <!-- jquery link up -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    
+      <script src="./js/app.js"></script>
+
+</body>
+</html>
